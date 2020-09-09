@@ -1,0 +1,9 @@
+.WhiteButton {
+    outline: none;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 20px;
+    color: #1B76FF;
+    background-color: white;
+    cursor: pointer;
+}
