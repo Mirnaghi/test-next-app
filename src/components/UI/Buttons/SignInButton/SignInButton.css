@@ -1,0 +1,19 @@
+.sign_in {
+    box-sizing: border-box;
+    width: 140px;
+    height: 40px;
+    padding: 0.6rem 1.5rem;;
+    border: 1.5px solid #FFFFFF;
+    outline: none;
+    border-radius: 20px;
+    color: #FFFFFF;
+    background-color: #589BFF;
+    opacity: 0.95;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+}
