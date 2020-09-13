@@ -4,17 +4,18 @@ import logo from '../../assets/logo.png'
 import searchIcon from '../../assets/search-icon.png';
 import SignInButton from '../UI/Buttons/SignInButton/SignInButton';
 import WhiteButton from '../UI/Buttons/WhiteButton/WhiteButton';
+import { Link , NavLink} from 'react-router-dom';
 
 const MenuBar = (props) => {
     return (
         <header class="menuBar">
-            <img class="logo" src={logo} alt="logo"/>
+            <NavLink class="logo" to="/"><img className="logo" src={logo} alt="logo"/></NavLink>
             <nav>
-                <ul class="nav_links">
-                    <li><a>Haqqımızda</a></li>
-                    <li><a>Necə işləyirik</a></li>
-                    <li><a>İxtisaslar</a></li>
-                    <li><a>istəklər</a></li>
+                <ul className="nav_links">
+                    <li className="nav_link"><Link to='/about'>Haqqımızda</Link></li>
+                    <li className="nav_link"><Link to='/how-works'>Necə işləyirik</Link></li>
+                    <li className="nav_link"><Link to='/specialties'>İxtisaslar</Link></li>
+                    <li className="nav_link"><Link to='/wishes'>istəklər</Link></li>
                 </ul>
             </nav>
             <div>
