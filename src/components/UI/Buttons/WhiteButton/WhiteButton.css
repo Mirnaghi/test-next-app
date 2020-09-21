@@ -7,3 +7,8 @@
     background-color: white;
     cursor: pointer;
 }
+
+.withBorder {
+    border: 1px solid #1B76FF;
+    width: 149.88px;
+}
