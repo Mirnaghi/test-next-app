@@ -1,0 +1,36 @@
+.result__container {
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-gap: 2rem;
+    margin-top: 50px auto;
+}
+
+/*
+===========
+Tablet view
+===========
+*/
+@media screen and (min-width: 600px){
+    .result__container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 900px){
+    .result__container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/*
+===========
+Desktop view
+===========
+*/
+@media screen and (min-width: 1280px){
+    .result__container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

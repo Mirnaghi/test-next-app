@@ -2,3 +2,9 @@ body {
     background-image: url("../../assets/home-page-bg.jpg");
     background-size: cover;
 }
+
+.home__container {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
