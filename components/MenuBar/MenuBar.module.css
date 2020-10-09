@@ -1,0 +1,48 @@
+.menuBar {
+    box-sizing: border-box;
+}
+
+.menuBar {
+    margin: 20px auto;
+    width: 95%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #589BFF;
+    opacity: 0.95;
+    border-radius: 20px;
+    padding: 0 30px;
+}
+
+.logo {
+    margin-right: auto;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.nav__links {
+    list-style-type: none;
+}
+
+.nav__link{   
+    display: inline-block;
+    padding: 20px;
+}
+
+.button {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button {
+    padding: 9px;
+    display: inline-block;
+}

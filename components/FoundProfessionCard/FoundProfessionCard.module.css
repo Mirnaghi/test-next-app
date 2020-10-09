@@ -1,0 +1,97 @@
+.card {
+    width: 270px;
+    height: 397.45px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(91, 91, 91, 0.05);
+    background-color: #ffffff;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.card:hover {
+    border: 3px solid #589BFF;
+
+}
+
+
+/*head section of card*/
+.card__head {
+    height: 80px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.card__head > h2{
+    margin-top: 22px;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.card__head > p {
+    color: #1B76FF;
+}
+
+
+/*detail section of card*/
+.detail__section {
+    box-sizing: border-box;
+    height: 210px;
+    padding: 10px 0 0 20px;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.available__content {
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height */
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.available__content > p {
+    margin-bottom: 10px;
+}
+
+.list__head {
+    margin-top: 28px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.foreign__resources {
+    margin-top: 10px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.foreign__resource {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+
+/*footer part of card*/
+.card__footer {
+    display: flex;
+    height: 85.45px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 0;
+    width: 270px;
+
+}
+
+.requirements {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1B76FF;
+    text-decoration-line: underline;
+}
