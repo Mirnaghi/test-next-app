@@ -1,0 +1,34 @@
+.supervisor {
+    width: 250px;
+    height: 52px;
+    display: flex;
+    margin: 0 20px 21px 20px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.supervisor__img {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.supervisor__name {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    color: #09090B;
+    margin-bottom: 2px;
+}
+
+.work {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 0;
+}
