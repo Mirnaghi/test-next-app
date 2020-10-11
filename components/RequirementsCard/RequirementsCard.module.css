@@ -1,0 +1,37 @@
+.requirements__card {
+    width: 290px;
+    height: 172px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #F2F2F2;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 25px 77px 30px 20px ;
+}
+
+.requirements__head {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #333333;
+    margin: 0
+}
+
+.requirements__list {
+    list-style-type: none;
+    margin: 17px 0;
+    padding: 0;
+}
+
+.r__list_item{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #222428;
+}
+
+
