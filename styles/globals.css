@@ -3,7 +3,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: Roboto, "sans serif";
-  --blue: #1B76FF;
+  --blue: #589BFF;
+  --white: #FFFFFF;
   
   /* for home page */
   background-image: url("../public/home-page-bg.jpg");
