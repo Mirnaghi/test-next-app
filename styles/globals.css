@@ -5,10 +5,29 @@ body {
   font-family: Roboto, "sans serif";
   --blue: #589BFF;
   --white: #FFFFFF;
-  
+  --black: #333333;
+  --red: #E7574F;
+  --yellow: #FFCD1B;
+  --green: #2EBB4D;
+  --page-bg-color: #f2f2f2; 
+
+  --fs-h1: 46px;
+  --lh-h1: 56px;
+
+  --fs-h3: 36px;
+  --lh-h3: 42px;
+  --bold: bold;
+
+  --fs-p: 18px;
+  --lh-p: 27px;
+
+  --fs-m-p: 16px;
+  --lh-m-p: 19px;
+
+  --fs-sm-p: 14px;
+  --lh-sm-p: 16px;
   /* for home page */
-  background-image: url("../public/home-page-bg.jpg");
-  background-size: cover;
+  background-color: var(--page-bg-color);
 }
 
 a {
@@ -18,4 +37,43 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+h3 {
+  font-size: var(--fs-h3);
+  line-height: var(--lh-h3);
+  font-weight: var(--bold);
+}
+
+p{
+  font-size: var(--fs-p);
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  body {
+    /* typography */
+    --fs-h1: 36px;
+    --lh-h1: 46px;
+
+    --fs-h3: 36px;
+    --lh-h3: 42px;
+    --bold: bold;
+  
+    --fs-p: 14px;
+    --lh-p: 21px;
+  
+    --fs-m-p: 12px;
+    --lh-m-p: 14px;
+  
+    --fs-sm-p: 10px;
+    --lh-sm-p: 12px;
+  }
 }
