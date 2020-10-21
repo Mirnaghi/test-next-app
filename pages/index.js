@@ -19,18 +19,22 @@ export default function Home() {
         <title>PathFinder</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <MenuBar></MenuBar>
-          <div className={styles.home__container}>
+      <div className={styles.home__neshe}>
+      <div id="header" className={styles.menubar__section}> 
+                <MenuBar /> 
+            </div>
+          <div>
               {userInput === '' ? 
-                  <>
+                  <div className={styles.home__container}>
                       <TopBar/> 
                       <SearchBar />
-                  </> 
-              : <>
+                  </div> 
+              : <div className={styles.home__container}>
                   <SearchBar/> 
                   <SearchResult/>
-                </>}
+                </div>}
           </div>
+          </div>          
       </>
   );
   

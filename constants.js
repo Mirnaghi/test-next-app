@@ -37,3 +37,13 @@ export const unavailableIcon = <FontAwesomeIcon
 export const userIconModule = <FontAwesomeIcon 
                                     icon={faUser}
                                     style={{color: '#C4C4C4'}}/>
+
+
+// icons for LessonCard  
+export const greenIcon = <FontAwesomeIcon 
+                                    icon={faCheckCircle}
+                                    style={{color: '#2BC44D', width: 15, height: 15}}/> 
+                                    
+export const yellowIcon = <FontAwesomeIcon 
+                                    icon={faCheckCircle}
+                                    style={{color: '#FFE071', width: 15, height: 15}}/>                                         

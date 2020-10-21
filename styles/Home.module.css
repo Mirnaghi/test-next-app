@@ -1,5 +1,20 @@
 .home__container {
-  display: grid;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  z-index: 0;
+}
+
+.home__neshe{
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../public/home-page-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 225px;
+}
+
+@media (max-width: 600px) {
+  
 }

@@ -5,13 +5,16 @@
 
 .module__card {
     display: flex;
-    width: 753px;
+    width: 95%;
+    max-width: 753px;
+    min-width: 550px;
     height: 183px;
     /* padding: 0 10px; */
     background-color: #FFFFFF;
     border: 1px solid #F5F5F5;
     border-radius: 10px;
     box-sizing: border-box;
+    margin-bottom: 1em;
 }
 
 .enrollment {
@@ -21,11 +24,11 @@
     align-items: center;
     box-sizing: border-box;
     border-right: 1px solid #F5F5F5;
+    padding-left: none;
 }
 
 .icon {
-    font-size: 48px;
-    color: #C4C4C4;
+    font-size: 3rem;
     margin-top: 47px;
     margin-bottom: 10px;
 }
@@ -38,23 +41,19 @@
     line-height: 21px;
     color: #222428;
     margin-top: 0;
-    margin-bottom: 24px;
+    margin-bottom: 0.525rem;
 }
 
 .done {
-    /* position: absolute;
-    bottom: 0;
-    left: 0; */
+    box-sizing: border-box;
     width: 173px;
-    /*height: 30px;*/
-    margin-left: 0;
+    margin-left: none;
     background: #2EBB4D;
     border-radius: 0px 0px 0px 10px;
     margin-bottom: 0;
     text-align: center;
-    padding-top: 7px;
-    padding-bottom: 6px;
-    box-sizing: border-box;
+    padding: 0.4em;
+    padding-right: 0.7em;
 }
 
 .module__title {
@@ -71,27 +70,46 @@
 
 .main {
     box-sizing: border-box;
-    padding-left: 20px;
+    padding-left: 1.25rem;
+
 }
 
 .main__p {
+    height: 40%;
     color: #222428;
+    margin-bottom: 0;
+    margin-right: 22%;
+    font-size: 0.8rem;
+    line-height: 1.35rem;
+    font-weight: normal;
 }
 
 .detail{
-    /*display: inline;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 0;
 }
 
 .detail__p{
-    text-align: right;
+    text-align: left;
     color: #ABABAB;
-    /*display: inline;*/
 }
 
 .detail__button {
-    margin-right: 20.17px;
-    /*margin-bottom: 17px;*/
+    margin-right: 1.25rem;
+    /* margin-bottom: 1rem; */
+}
+
+@media (max-width: 700px){
+    
+
+    .detail__button {
+        margin-right: 0.5rem;
+    }
+
+    .detail__p {
+        display: flex;
+        flex-direction: column;
+    }
 }

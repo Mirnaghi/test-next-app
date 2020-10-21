@@ -64,8 +64,8 @@
 /* mobile view */
 @media (max-width: 960px){
     .menuBar {
-        position: relative;
-        z-index: 0;
+        position: fixed;
+        z-index: 2;
     }
 
     .nav__links {

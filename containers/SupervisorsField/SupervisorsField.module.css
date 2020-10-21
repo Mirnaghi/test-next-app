@@ -9,6 +9,7 @@
     border: 1px solid #F2F2F2;
     /* box-sizing: border-box; */
     border-radius: 10px;
+    z-index: 0;
 }
 
 /* head part */
