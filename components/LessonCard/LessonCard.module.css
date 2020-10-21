@@ -1,0 +1,79 @@
+.lesson__card {
+    display: flex;
+    height: 55px;
+    width: 100%;
+    max-width: 773px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.head__section, 
+.main__section {
+    display: flex;    
+    align-items: center;
+}
+
+.head__section {
+    justify-content: flex-start;
+    width: 20%;
+    padding-left: 10px;
+}
+
+.main__section {
+    width: 70%;
+    justify-content: space-between;
+    margin-left: 5%;
+}
+
+/* typhography  */
+.lesson__name{
+    font-weight: bold;
+}
+
+
+.lesson__lang {
+    font-size: var(--fs-m-p);
+    line-height: var(--lh-m-p);    
+}
+
+.lesson__name,
+.lesson__type,
+.lesson__rate,
+.lesson__price,
+.lesson__importance  {
+    font-size: var(--fs-sm-p);
+    line-height: var(--lh-sm-p);   
+}
+
+.lesson__importance {
+    line-height: 21px;
+}
+
+
+/* color */
+.head__section,
+.lesson__lang,
+.lesson_rate {
+    color: var(--black);
+}
+
+.imp__yellow {
+    color: var(--yellow);
+}
+
+.imp__red {
+    color: var(--red);
+}
+
+.lesson__price {
+    color: var(--green);
+}
+
+.start__button {
+    color: var(--blue);
+}
+
+
+/* styling */
+/* .lesson__price {
+    
+} */
