@@ -5,11 +5,11 @@ export default function LessonCard({ lesson }){
     return (
         <div className={styles.lesson__card}>
             <secton className={styles.head__section}>
+                <i className={styles.head__icon}>{greenIcon }</i>
                 <p className={styles.lesson__name}> What is HTML</p>
-                <i><greenIcon /></i>
             </secton>
             <section className={styles.main__section}>
-                <h4 className={styles.lesson__lang}>Aze</h4>
+                <p className={styles.lesson__lang}>Aze</p>
                 <p className={styles.lesson__importance}>Mutleq</p>
                 <p className={styles.lesson__type}>Video</p>
                 <p className={styles.lesson__rate}>4.5 / 5</p>
