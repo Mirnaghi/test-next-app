@@ -1,5 +1,5 @@
 import React from 'react';
-import { faCheckCircle, faTimesCircle, faUser, faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { faCheckCircle, faTimesCircle, faUser, faBars, faTimes, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import './fontawesome';
 
@@ -46,4 +46,10 @@ export const greenIcon = <FontAwesomeIcon
                                     
 export const yellowIcon = <FontAwesomeIcon 
                                     icon={faCheckCircle}
-                                    style={{color: '#FFE071', width: 15, height: 15}}/>                                         
+                                    style={{color: '#FFE071', width: 15, height: 15}}/>                                       
+
+
+// dropdown icon                                    
+export const dropdownIcon = <FontAwesomeIcon 
+                                    icon={faChevronDown}
+                                    style={{color: '#000000', width: 17, height: 15}}/>                                     
