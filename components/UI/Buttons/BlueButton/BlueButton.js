@@ -1,8 +1,8 @@
 import React from "react";
-import "./BlueButton.css";
+import styles from "./BlueButton.module.css";
 
-const BlueButton = (props) => {
-  return <button className="BlueButton">{props.children}</button>;
+const BlueButton = ({ name }) => {
+  return <button className={styles.BlueButton}>{name}</button>;
 };
 
 export default BlueButton;
