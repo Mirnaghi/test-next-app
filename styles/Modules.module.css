@@ -1,23 +1,138 @@
 .modules__container {
     display: grid;
     width: 95vw;
-    /* height: 90vh; */
-    /* background-color: blueviolet; */
     margin: 0 auto;
-
-    grid-template-columns:  auto 300px;
-    justify-items: center;
+    grid-template-columns:  1fr 300px;
+    grid-template-rows: 1fr;
+    /* justify-items: center; */
     column-gap: 71px;
     padding-top: 100px;
+    z-index: 0;
+}
+
+/* main section */
+.main__section {
+    padding-left: 2rem;
+}
+
+/* head section */
+.head__section {
+    display: flex;
+    width: 95%;
+    max-width: 753px;
+    min-width: 550px;
+    height: 183px;
+   
+    border-bottom: 2px solid #EFEFEF;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+}
+
+.enrollment {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-right: 1px solid #F5F5F5;
+    text-align: center;
+}
+
+.icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.enrollment__p {
+    width: 100%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #222428;
+    margin-top: 0;
+    margin-bottom: 0.525rem;
+    padding: 10px 10px;
+}
+
+.module__title {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+
+.done__p {
+    margin: 0;
+}
+
+.main {
+    box-sizing: border-box;
+    padding-left: 1.25rem;
+
+}
+
+.main__p {
+    height: 40%;
+    color: #222428;
+    margin-bottom: 0;
+    margin-right: 22%;
+    font-size: 0.8rem;
+    line-height: 1.35rem;
+    font-weight: normal;
+}
+
+.detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.detail__p{
+    text-align: left;
+    color: #ABABAB;
+}
+
+
+/* offer section */
+.offer__section {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: var(--fs-m-p);
+    line-height: var(--lh-m-p);
+    margin-bottom: 2rem;
+}
+
+
+
+.filter__section {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    width: 100%;
+    z-index: -1;
 }
 
 .lessons__section {
+    margin-top: 0;
     width: 100%;
+    /* height: auto; */
     max-width: 773px;
     background-color: var(--white);
     box-shadow: 4px 4px 10px rgba(85, 85, 85, 0.02);
     border-radius: 10px;
-    grid-area: 1/1/-1/2;
+    /* grid-area: 1/1/2/2; */
 }
 
 .filter__names ,
@@ -28,7 +143,7 @@
 
 .filter__names {
     width: 100%;
-    max-width: 773px;
+    /* max-width: 773px; */
     font-size: var(--fs-sm-p);
     line-height: var(--lh-sm-p);
     font-weight: bold;
