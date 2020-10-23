@@ -1,3 +1,372 @@
 {
-    
+    "pathes": [
+        {
+            "id": 1,
+            "name": "Front-end developer",
+            "enrollment": 255,
+            "free_cont": true,
+            "special_cont": true,
+            "foreign_resources": [
+                "Azerbaycan dili",
+                "English",
+                "Deutsch"
+            ]
+        },
+        {
+            "id": 12,
+            "name": "Front-end developer",
+            "enrollment": 255,
+            "free_cont": true,
+            "special_cont": true,
+            "foreign_resources": [
+                "Azerbaycan dili",
+                "English",
+                "Deutsch"
+            ]
+        },
+        {
+            "id": 13,
+            "name": "Front-end developer",
+            "enrollment": 255,
+            "free_cont": true,
+            "special_cont": true,
+            "foreign_resources": [
+                "Azerbaycan dili",
+                "English",
+                "Deutsch"
+            ]
+        },
+        {
+            "id": 14,
+            "name": "Front-end developer",
+            "enrollment": 255,
+            "free_cont": true,
+            "special_cont": true,
+            "foreign_resources": [
+                "Azerbaycan dili",
+                "English",
+                "Deutsch"
+            ]
+        },
+        {
+            "id": 15,
+            "name": "Front-end developer",
+            "enrollment": 255,
+            "free_cont": true,
+            "special_cont": true,
+            "foreign_resources": [
+                "Azerbaycan dili",
+                "English",
+                "Deutsch"
+            ]
+        },
+        {
+            "id": 16,
+            "name": "Front-end developer",
+            "enrollment": 255,
+            "free_cont": true,
+            "special_cont": true,
+            "foreign_resources": [
+                "Azerbaycan dili",
+                "English",
+                "Deutsch"
+            ]
+        },
+        {
+            "id": 17,
+            "name": "Front-end developer",
+            "enrollment": 255,
+            "free_cont": true,
+            "special_cont": true,
+            "foreign_resources": [
+                "Azerbaycan dili",
+                "English",
+                "Deutsch"
+            ]
+        },
+        {
+            "id": 21,
+            "name": "Backend-end developer",
+            "enrollment": 195,
+            "free_cont": false,
+            "special_cont": true,
+            "foreign_resources": [
+                "Azerbaycan dili",
+                "English",
+                "Deutsch"
+            ]
+        },
+        {
+            "id": 23,
+            "name": "Backend-end developer",
+            "enrollment": 195,
+            "free_cont": false,
+            "special_cont": true,
+            "foreign_resources": [
+                "Azerbaycan dili",
+                "English",
+                "Deutsch"
+            ]
+        },
+        {
+            "id": 24,
+            "name": "Backend-end developer",
+            "enrollment": 195,
+            "free_cont": false,
+            "special_cont": true,
+            "foreign_resources": [
+                "Azerbaycan dili",
+                "English",
+                "Deutsch"
+            ]
+        },
+        {
+            "id": 25,
+            "name": "Backend-end developer",
+            "enrollment": 195,
+            "free_cont": false,
+            "special_cont": true,
+            "foreign_resources": [
+                "Azerbaycan dili",
+                "English",
+                "Deutsch"
+            ]
+        },
+        {
+            "id": 26,
+            "name": "Backend-end developer",
+            "enrollment": 195,
+            "free_cont": false,
+            "special_cont": true,
+            "foreign_resources": [
+                "Azerbaycan dili",
+                "English",
+                "Deutsch"
+            ]
+        },
+        {
+            "id": 27,
+            "name": "Backend-end developer",
+            "enrollment": 195,
+            "free_cont": false,
+            "special_cont": true,
+            "foreign_resources": [
+                "Azerbaycan dili",
+                "English",
+                "Deutsch"
+            ]
+        },
+        {
+            "id": 28,
+            "name": "Backend-end developer",
+            "enrollment": 195,
+            "free_cont": false,
+            "special_cont": true,
+            "foreign_resources": [
+                "Azerbaycan dili",
+                "English",
+                "Deutsch"
+            ]
+        },
+        {
+            "id": 29,
+            "name": "Backend-end developer",
+            "enrollment": 195,
+            "free_cont": false,
+            "special_cont": true,
+            "foreign_resources": [
+                "Azerbaycan dili",
+                "English",
+                "Deutsch"
+            ]
+        },
+        {
+            "id": 210,
+            "name": "Backend-end developer",
+            "enrollment": 195,
+            "free_cont": false,
+            "special_cont": true,
+            "foreign_resources": [
+                "Azerbaycan dili",
+                "English",
+                "Deutsch"
+            ]
+        },
+        {
+            "id": 31,
+            "name": "Game developer",
+            "enrollment": 155,
+            "free_cont": true,
+            "special_cont": false,
+            "foreign_resources": [
+                "Azerbaycan dili",
+                "English"
+            ]
+        },
+        {
+            "id": 32,
+            "name": "Game developer",
+            "enrollment": 155,
+            "free_cont": true,
+            "special_cont": false,
+            "foreign_resources": [
+                "Azerbaycan dili",
+                "English"
+            ]
+        },
+        {
+            "id": 33,
+            "name": "Game developer",
+            "enrollment": 155,
+            "free_cont": true,
+            "special_cont": false,
+            "foreign_resources": [
+                "Azerbaycan dili",
+                "English"
+            ]
+        },
+        {
+            "id": 34,
+            "name": "Game developer",
+            "enrollment": 155,
+            "free_cont": true,
+            "special_cont": false,
+            "foreign_resources": [
+                "Azerbaycan dili",
+                "English"
+            ]
+        },
+        {
+            "id": 35,
+            "name": "Game developer",
+            "enrollment": 155,
+            "free_cont": true,
+            "special_cont": false,
+            "foreign_resources": [
+                "Azerbaycan dili",
+                "English"
+            ]
+        },
+        {
+            "id": 41,
+            "name": "Dev-Ops engineer",
+            "enrollment": 100,
+            "free_cont": true,
+            "special_cont": true,
+            "foreign_resources": [
+                "Azerbaycan dili",
+                "English",
+                "Rus"
+            ]
+        },
+        {
+            "id": 42,
+            "name": "Dev-Ops engineer",
+            "enrollment": 100,
+            "free_cont": true,
+            "special_cont": true,
+            "foreign_resources": [
+                "Azerbaycan dili",
+                "English",
+                "Rus"
+            ]
+        },
+        {
+            "id": 43,
+            "name": "Dev-Ops engineer",
+            "enrollment": 100,
+            "free_cont": true,
+            "special_cont": true,
+            "foreign_resources": [
+                "Azerbaycan dili",
+                "English",
+                "Rus"
+            ]
+        },
+        {
+            "id": 44,
+            "name": "Dev-Ops engineer",
+            "enrollment": 100,
+            "free_cont": true,
+            "special_cont": true,
+            "foreign_resources": [
+                "Azerbaycan dili",
+                "English",
+                "Rus"
+            ]
+        },
+        {
+            "id": 51,
+            "name": "Site-Reliability engineer",
+            "enrollment": 255,
+            "free_cont": true,
+            "special_cont": true,
+            "foreign_resources": [
+                "Azerbaycan dili",
+                "English",
+                "Deutsch"
+            ]
+        },
+        {
+            "id": 52,
+            "name": "Site-Reliability engineer",
+            "enrollment": 255,
+            "free_cont": true,
+            "special_cont": true,
+            "foreign_resources": [
+                "Azerbaycan dili",
+                "English",
+                "Deutsch"
+            ]
+        },
+        {
+            "id": 53,
+            "name": "Site-Reliability engineer",
+            "enrollment": 255,
+            "free_cont": true,
+            "special_cont": true,
+            "foreign_resources": [
+                "Azerbaycan dili",
+                "English",
+                "Deutsch"
+            ]
+        },
+        {
+            "id": 18,
+            "name": "Front-end developer",
+            "enrollment": 255,
+            "free_cont": true,
+            "special_cont": true,
+            "foreign_resources": [
+                "Azerbaycan dili",
+                "English",
+                "Deutsch"
+            ]
+        },
+        {
+            "id": 19,
+            "name": "Front-end developer",
+            "enrollment": 255,
+            "free_cont": true,
+            "special_cont": true,
+            "foreign_resources": [
+                "Azerbaycan dili",
+                "English",
+                "Deutsch"
+            ]
+        },
+        {
+            "id": 110,
+            "name": "Front-end developer",
+            "enrollment": 255,
+            "free_cont": true,
+            "special_cont": true,
+            "foreign_resources": [
+                "Azerbaycan dili",
+                "English",
+                "Deutsch"
+            ]
+        }
+
+    ]
 }
