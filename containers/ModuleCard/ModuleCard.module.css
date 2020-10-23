@@ -1,7 +1,7 @@
-.container {
+/* .container {
     margin: 100px auto;
     padding: 20px;
-}
+} */
 
 .module__card {
     display: flex;
@@ -9,12 +9,11 @@
     max-width: 753px;
     min-width: 550px;
     height: 183px;
-    /* padding: 0 10px; */
     background-color: #FFFFFF;
     border: 1px solid #F5F5F5;
     border-radius: 10px;
     box-sizing: border-box;
-    margin-bottom: 1em;
+    margin: 0 auto 1rem auto;
 }
 
 .enrollment {

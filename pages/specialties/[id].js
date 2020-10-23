@@ -46,7 +46,7 @@ export async function getStaticProps({params}){
         "enrollment": 255,
         "title": "CSS",
         "lessons": 12,
-        "info": "Lorem ipsum, tenetur illum quasi reprehenderit neque atque magni quod.Numquam explicbo exercitationem earum reprehenderit.Dignissimos, nemo dolor?" 
+        "info": "Lorem ipsum, tenetur illum quasi reprehenderit neque atque magni quod.Numquam reprehenderit.Dignissimos, nemo dolor?" 
     };
     
     return {
