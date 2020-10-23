@@ -1,4 +1,8 @@
 .home__container {
+  position: relative;
+  width: auto;
+  height: auto;
+  top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,15 +10,28 @@
   z-index: 0;
 }
 
-.home__neshe{
+.result__container {
+  /* position: relative; */
+  margin: 100px auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__neshe__bg {
   width: 100vw;
   height: 100vh;
   background-image: url("../public/home-page-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 225px;
+}
+
+.home__neshe {
+  background-color: var(--page-bg-color);
 }
 
 @media (max-width: 600px) {
-  
+  /* .home__container {
+    top: 190px;
+  } */
 }

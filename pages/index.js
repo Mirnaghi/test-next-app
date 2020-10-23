@@ -8,10 +8,29 @@ import TopBar from '../components/TopBar/TopBar'
 import SearchBar from '../components/SearchBar/SearchBar'
 import SearchResult from '../containers/SearchResult/SearchResult'
 
+import { getPathes } from '../services/pathServices'
+
 
 export default function Home() {
 
-  const [userInput, setUserInput] = useState('');
+  const [userInput, setUserInput] = useState('sfd');
+
+  // pagination
+  
+
+  // handle change of input field
+  const handleInputFieldChange = (event) => {
+    const inputKeyword = event.target.value;
+    console.log(inputKeyword);
+    setUserInput(inputKeyword);
+  }
+
+  // handle submit
+  const handleSubmit = async (event) => {
+    console.log(userInput);
+    const pathes = await getPathes();
+    console.log(pathes);
+  }
 
   return (
     <>
@@ -19,23 +38,21 @@ export default function Home() {
         <title>PathFinder</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={styles.home__neshe}>
-      <div id="header" className={styles.menubar__section}> 
-                <MenuBar /> 
-            </div>
-          <div>
-              {userInput === '' ? 
-                  <div className={styles.home__container}>
-                      <TopBar/> 
-                      <SearchBar />
-                  </div> 
-              : <div className={styles.home__container}>
-                  <SearchBar/> 
-                  <SearchResult/>
-                </div>}
-          </div>
-          </div>          
-      </>
+      <div className={userInput === "" ? styles.home__neshe__bg : styles.home__neshe}>
+        <div id="header" className={styles.menubar__section}>
+          <MenuBar />
+        </div>
+        <div className={styles.home__container}>
+          {userInput === '' ? <TopBar /> : <></>}
+          <SearchBar
+            handleChange={handleInputFieldChange}
+            handleSubmit={handleSubmit} />
+          {userInput !== '' ? <SearchResult /> : <></>}
+        </div>
+      </div>
+    </>
   );
-  
+
 }
+
+
