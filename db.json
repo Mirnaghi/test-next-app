@@ -3,7 +3,7 @@
         {
             "id": 1,
             "name": "Front-end developer",
-            "enrollment": 255,
+            "studentCount": 255,
             "free_cont": true,
             "special_cont": true,
             "foreign_resources": [
@@ -15,7 +15,7 @@
         {
             "id": 12,
             "name": "Front-end developer",
-            "enrollment": 255,
+            "studentCount": 255,
             "free_cont": true,
             "special_cont": true,
             "foreign_resources": [
@@ -27,7 +27,7 @@
         {
             "id": 13,
             "name": "Front-end developer",
-            "enrollment": 255,
+            "studentCount": 255,
             "free_cont": true,
             "special_cont": true,
             "foreign_resources": [
@@ -39,7 +39,7 @@
         {
             "id": 14,
             "name": "Front-end developer",
-            "enrollment": 255,
+            "studentCount": 255,
             "free_cont": true,
             "special_cont": true,
             "foreign_resources": [
@@ -51,7 +51,7 @@
         {
             "id": 15,
             "name": "Front-end developer",
-            "enrollment": 255,
+            "studentCount": 255,
             "free_cont": true,
             "special_cont": true,
             "foreign_resources": [
@@ -63,7 +63,7 @@
         {
             "id": 16,
             "name": "Front-end developer",
-            "enrollment": 255,
+            "studentCount": 255,
             "free_cont": true,
             "special_cont": true,
             "foreign_resources": [
@@ -75,7 +75,7 @@
         {
             "id": 17,
             "name": "Front-end developer",
-            "enrollment": 255,
+            "studentCount": 255,
             "free_cont": true,
             "special_cont": true,
             "foreign_resources": [
@@ -87,7 +87,7 @@
         {
             "id": 21,
             "name": "Backend-end developer",
-            "enrollment": 195,
+            "studentCount": 195,
             "free_cont": false,
             "special_cont": true,
             "foreign_resources": [
@@ -99,7 +99,7 @@
         {
             "id": 23,
             "name": "Backend-end developer",
-            "enrollment": 195,
+            "studentCount": 195,
             "free_cont": false,
             "special_cont": true,
             "foreign_resources": [
@@ -111,7 +111,7 @@
         {
             "id": 24,
             "name": "Backend-end developer",
-            "enrollment": 195,
+            "studentCount": 195,
             "free_cont": false,
             "special_cont": true,
             "foreign_resources": [
@@ -123,7 +123,7 @@
         {
             "id": 25,
             "name": "Backend-end developer",
-            "enrollment": 195,
+            "studentCount": 195,
             "free_cont": false,
             "special_cont": true,
             "foreign_resources": [
@@ -135,7 +135,7 @@
         {
             "id": 26,
             "name": "Backend-end developer",
-            "enrollment": 195,
+            "studentCount": 195,
             "free_cont": false,
             "special_cont": true,
             "foreign_resources": [
@@ -147,7 +147,7 @@
         {
             "id": 27,
             "name": "Backend-end developer",
-            "enrollment": 195,
+            "studentCount": 195,
             "free_cont": false,
             "special_cont": true,
             "foreign_resources": [
@@ -159,7 +159,7 @@
         {
             "id": 28,
             "name": "Backend-end developer",
-            "enrollment": 195,
+            "studentCount": 195,
             "free_cont": false,
             "special_cont": true,
             "foreign_resources": [
@@ -171,7 +171,7 @@
         {
             "id": 29,
             "name": "Backend-end developer",
-            "enrollment": 195,
+            "studentCount": 195,
             "free_cont": false,
             "special_cont": true,
             "foreign_resources": [
@@ -183,7 +183,7 @@
         {
             "id": 210,
             "name": "Backend-end developer",
-            "enrollment": 195,
+            "studentCount": 195,
             "free_cont": false,
             "special_cont": true,
             "foreign_resources": [
@@ -195,7 +195,7 @@
         {
             "id": 31,
             "name": "Game developer",
-            "enrollment": 155,
+            "studentCount": 155,
             "free_cont": true,
             "special_cont": false,
             "foreign_resources": [
@@ -206,7 +206,7 @@
         {
             "id": 32,
             "name": "Game developer",
-            "enrollment": 155,
+            "studentCount": 155,
             "free_cont": true,
             "special_cont": false,
             "foreign_resources": [
@@ -217,7 +217,7 @@
         {
             "id": 33,
             "name": "Game developer",
-            "enrollment": 155,
+            "studentCount": 155,
             "free_cont": true,
             "special_cont": false,
             "foreign_resources": [
@@ -228,7 +228,7 @@
         {
             "id": 34,
             "name": "Game developer",
-            "enrollment": 155,
+            "studentCount": 155,
             "free_cont": true,
             "special_cont": false,
             "foreign_resources": [
@@ -239,7 +239,7 @@
         {
             "id": 35,
             "name": "Game developer",
-            "enrollment": 155,
+            "studentCount": 155,
             "free_cont": true,
             "special_cont": false,
             "foreign_resources": [
@@ -250,7 +250,7 @@
         {
             "id": 41,
             "name": "Dev-Ops engineer",
-            "enrollment": 100,
+            "studentCount": 100,
             "free_cont": true,
             "special_cont": true,
             "foreign_resources": [
@@ -262,7 +262,7 @@
         {
             "id": 42,
             "name": "Dev-Ops engineer",
-            "enrollment": 100,
+            "studentCount": 100,
             "free_cont": true,
             "special_cont": true,
             "foreign_resources": [
@@ -274,7 +274,7 @@
         {
             "id": 43,
             "name": "Dev-Ops engineer",
-            "enrollment": 100,
+            "studentCount": 100,
             "free_cont": true,
             "special_cont": true,
             "foreign_resources": [
@@ -286,7 +286,7 @@
         {
             "id": 44,
             "name": "Dev-Ops engineer",
-            "enrollment": 100,
+            "studentCount": 100,
             "free_cont": true,
             "special_cont": true,
             "foreign_resources": [
@@ -298,7 +298,7 @@
         {
             "id": 51,
             "name": "Site-Reliability engineer",
-            "enrollment": 255,
+            "studentCount": 255,
             "free_cont": true,
             "special_cont": true,
             "foreign_resources": [
@@ -310,7 +310,7 @@
         {
             "id": 52,
             "name": "Site-Reliability engineer",
-            "enrollment": 255,
+            "studentCount": 255,
             "free_cont": true,
             "special_cont": true,
             "foreign_resources": [
@@ -322,7 +322,7 @@
         {
             "id": 53,
             "name": "Site-Reliability engineer",
-            "enrollment": 255,
+            "studentCount": 255,
             "free_cont": true,
             "special_cont": true,
             "foreign_resources": [
@@ -334,7 +334,7 @@
         {
             "id": 18,
             "name": "Front-end developer",
-            "enrollment": 255,
+            "studentCount": 255,
             "free_cont": true,
             "special_cont": true,
             "foreign_resources": [
@@ -346,7 +346,7 @@
         {
             "id": 19,
             "name": "Front-end developer",
-            "enrollment": 255,
+            "studentCount": 255,
             "free_cont": true,
             "special_cont": true,
             "foreign_resources": [
@@ -358,7 +358,7 @@
         {
             "id": 110,
             "name": "Front-end developer",
-            "enrollment": 255,
+            "studentCount": 255,
             "free_cont": true,
             "special_cont": true,
             "foreign_resources": [
