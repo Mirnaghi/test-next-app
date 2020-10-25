@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import { useState } from 'react'
+import {useSelector,useDispatch} from 'react-redux'
+import {searchPath} from '../redux/searchPathReducer'
 
 import styles from '../styles/Home.module.css'
 
@@ -8,21 +10,28 @@ import TopBar from '../components/TopBar/TopBar'
 import SearchBar from '../components/SearchBar/SearchBar'
 import SearchResult from '../containers/SearchResult/SearchResult'
 
-import { getPathes } from '../services/pathServices'
-
 
 export default function Home() {
-
-  const [userInput, setUserInput] = useState('sfd');
-
-  // pagination
   
+  const searchResult = useSelector(state => state.foundPathes)
+  const dispatch = useDispatch()
+
+  const [searching, setSearching] = useState(false)
+  const [loading, setLoading] = useState(false)
 
   // handle change of input field
   const handleInputFieldChange = (event) => {
+    setSearching(true)
     const inputKeyword = event.target.value;
-    console.log(inputKeyword);
-    setUserInput(inputKeyword);
+    if (inputKeyword === ''){
+      setSearching(false)
+    } else {
+      setLoading(true)
+      setTimeout(() => {
+        setLoading(false)
+      }, 1500)
+      dispatch(searchPath(inputKeyword))
+    }
   }
 
   // handle submit
@@ -38,16 +47,16 @@ export default function Home() {
         <title>PathFinder</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={userInput === "" ? styles.home__neshe__bg : styles.home__neshe}>
+      <div className={!searching ? styles.home__neshe__bg : styles.home__neshe}>
         <div id="header" className={styles.menubar__section}>
           <MenuBar />
         </div>
         <div className={styles.home__container}>
-          {userInput === '' ? <TopBar /> : <></>}
+          {!searching ? <TopBar /> : <></>}
           <SearchBar
             handleChange={handleInputFieldChange}
             handleSubmit={handleSubmit} />
-          {userInput !== '' ? <SearchResult /> : <></>}
+          {searching ? loading ? <h1>loading...</h1> : <SearchResult searchResult={searchResult}/> : <></>}
         </div>
       </div>
     </>
