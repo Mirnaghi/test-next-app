@@ -6,7 +6,14 @@
     line-height: var(--lh-h1);
     text-align:center;
     color: white;
-    margin-top: 5vw;
+    margin-top: 10vh;
     margin-left: auto;
     margin-right: auto;
+}
+
+
+@media (max-width: 400px) {
+    .top__bar {
+        margin-top: 25%;
+    }
 }

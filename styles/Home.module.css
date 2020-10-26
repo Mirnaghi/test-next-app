@@ -23,7 +23,7 @@
   height: 100vh;
   background-image: url("../public/home-page-bg.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 .home__neshe {
@@ -34,4 +34,7 @@
   /* .home__container {
     top: 190px;
   } */
+  .home__neshe__bg {
+    background-size: 150% 100%;
+  }
 }
