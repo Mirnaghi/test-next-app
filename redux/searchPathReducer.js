@@ -2,7 +2,7 @@ import {getPathes} from '../services/pathServices'
 
 export function searchPath(pathName) {
     return async (dispatch) => {
-            const pathes = await getPathes()
+            const pathes = await getPathes().catch((e) => { return [] })
             const foundPathes = pathes.filter(path => { 
                 return path.name.toLowerCase().includes(pathName.toLowerCase())
             })
