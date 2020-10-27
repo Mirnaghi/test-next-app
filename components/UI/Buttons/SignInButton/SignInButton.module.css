@@ -1,6 +1,5 @@
 .sign__in {
     box-sizing: border-box;
-    width: 140px;
     height: 40px;
     padding: 0.6rem 1.5rem;;
     border: 1.5px solid #FFFFFF;
@@ -17,3 +16,4 @@
     letter-spacing: 0.05em;
     cursor: pointer;
 }
+

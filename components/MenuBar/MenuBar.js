@@ -1,22 +1,28 @@
 import Link from 'next/link'
 import React from 'react'
-import { useState } from 'react'
+import {useState} from 'react'
 import styles from './MenuBar.module.css'
-
+import {useDispatch} from 'react-redux'
+import {openLoginModal, openSignUpModal} from '../../redux/authModalReducer'
 import SignInButton from '../UI/Buttons/SignInButton/SignInButton'
 import WhiteButton from '../UI/Buttons/WhiteButton/WhiteButton'
+import SignUpField from '../../containers/SignUpField/SignUpField'
+import LoginField from '../../containers/LoginField/LoginField'
 
 import { hamburgerIcon, closeMenuIcon} from '../../constants'
 
+
 const MenuBar = (props) => {
 
-    const [clicked, setClicked] = useState(false);
+    const [clicked, setClicked] = useState(false)
+    const dispatch = useDispatch()
 
     const handleClick = () => {
-        setClicked(!clicked);
+        setClicked(!clicked)
     }
 
     return (
+        <>
         <header className={styles.menuBar}>
             <Link className={styles.logo} href="/"><img className={styles.logo} src="/logo.png" alt="logo"/></Link>
             <div className={styles.icons__for__mobile} onClick={handleClick}>
@@ -31,8 +37,8 @@ const MenuBar = (props) => {
                     <li className={styles.nav__link}><Link href='/wishes'>istəklər</Link></li>
 
                     <div className={styles.buttons__container}>
-                        <a className={styles.button}><WhiteButton name="DAXIL OL"/></a>
-                        <a className={styles.button}><SignInButton /></a>
+                        <a className={styles.button}><WhiteButton name="DAXIL OL" handleClick={() => dispatch(openLoginModal(true))}/></a>
+                        <a className={styles.button}><SignInButton name="QEYDIYYAT" handleClick={() => dispatch(openSignUpModal(true))}/></a>
                     </div>
                 </ul>
             </nav>
@@ -40,6 +46,9 @@ const MenuBar = (props) => {
             
             <img className={styles.search__icon} src="/search-icon.png" alt="s"/>
         </header>
+        <SignUpField />
+        <LoginField />
+        </>
     )
 }
 
