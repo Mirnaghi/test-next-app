@@ -10,6 +10,8 @@ body {
   --yellow: #FFCD1B;
   --green: #2EBB4D;
   --page-bg-color: #f2f2f2; 
+  --input-ph-color: rgba(34, 36, 40, 0.5);
+  --input-border-color: #EAEAEA;
 
   --fs-h1: 46px;
   --lh-h1: 56px;
@@ -17,6 +19,9 @@ body {
   --fs-h3: 36px;
   --lh-h3: 42px;
   --bold: bold;
+
+  --fs-h4: 24px;
+  --lh-h4: 28px;
 
   --fs-p: 18px;
   --lh-p: 27px;
@@ -45,7 +50,13 @@ h3 {
   font-weight: var(--bold);
 }
 
-p{
+h4 {
+  font-size: var(--fs-h4);
+  line-height: var(--lh-h4);
+  font-weight: var(--bold);
+}
+
+p {
   font-size: var(--fs-p);
 }
 
@@ -56,6 +67,30 @@ p{
   top: 0;
   width: 100%;
   z-index: 2;
+}
+
+a {
+  font-size: var(--fs-sm-p);
+  line-height: var(--lh-sm-p);
+  font-weight: var(--bold);
+  text-decoration-line: underline;
+}
+
+/* input fields */
+input {
+  outline: none;
+  padding-left: 17px;
+  color: var(--input-ph-color);
+  font-size: var(--fs-sm-p);
+  line-height: var(--lh-sm-p);
+
+}
+
+label {
+  padding-left: 10px;
+  font-size: 12px;
+  line-height: var(--lh-sm-p);
+  color: var(--input-ph-color);
 }
 
 @media (max-width: 600px) {
