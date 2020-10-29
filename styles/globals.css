@@ -10,6 +10,7 @@ body {
   --yellow: #FFCD1B;
   --green: #2EBB4D;
   --page-bg-color: #f2f2f2; 
+  --secondary-bg-color: #FEFEFE;
   --input-ph-color: rgba(34, 36, 40, 0.5);
   --input-border-color: #EAEAEA;
 
@@ -83,6 +84,11 @@ input {
   color: var(--input-ph-color);
   font-size: var(--fs-sm-p);
   line-height: var(--lh-sm-p);
+  height: 35px;
+  background: var(--white);
+  border: 1px solid var(--input-border-color);
+  box-sizing: border-box;
+  border-radius: 20px;
 
 }
 
