@@ -1,0 +1,6 @@
+.account__container {
+    display: flex;
+    width: 80%;
+    background-color: aqua;
+    margin: 10em auto;
+}
