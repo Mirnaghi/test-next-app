@@ -23,7 +23,8 @@ const MenuBar = (props) => {
 
     return (
         <>
-        <header className={styles.menuBar}>
+        <div className={styles.menuBar}>
+        
             <Link className={styles.logo} href="/"><img className={styles.logo} src="/logo.png" alt="logo"/></Link>
             <div className={styles.icons__for__mobile} onClick={handleClick}>
                 {clicked ? closeMenuIcon : hamburgerIcon}
@@ -45,7 +46,7 @@ const MenuBar = (props) => {
             
             
             <img className={styles.search__icon} src="/search-icon.png" alt="s"/>
-        </header>
+        </div>
         <SignUpField />
         <LoginField />
         </>

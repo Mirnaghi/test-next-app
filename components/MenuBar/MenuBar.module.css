@@ -3,8 +3,8 @@
 }
 
 .menuBar {
-    margin: 20px auto;
-    width: 95%;
+    margin: 0 auto;
+    width: 85%;
     height: 60px;
     display: flex;
     align-items: center;
@@ -62,10 +62,11 @@
 }
 
 /* mobile view */
-@media (max-width: 960px){
-    .menuBar {
-        position: fixed;
-        z-index: 1;
+@media (max-width: 1050px){
+    .menuBar { 
+        margin: 0 auto;
+        /* position: fixed; */
+        /* z-index: 1; */
     }
 
     .nav__links {
@@ -82,10 +83,10 @@
         position: absolute;
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 85%;
         height: 380px;
         top: 35px;
-        left: 0;
+        left: 7.5%;
         opacity: 1;
         justify-content: center;
         align-items: center;
