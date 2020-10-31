@@ -48,9 +48,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={!searching ? styles.home__neshe__bg : styles.home__neshe}>
-        <div id="header" className={styles.menubar__section}>
+         <header> { /*id="header" className={styles.menubar__section}> */}
           <MenuBar />
-        </div>
+        </header>
         <div className={styles.home__container}>
           {!searching ? <TopBar /> : <></>}
           <SearchBar

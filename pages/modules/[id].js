@@ -13,9 +13,9 @@ export default function Modules({ lesson }){
     
     return (
         <div>
-            <div id="header">
+            <header>
                 <MenuBar />
-            </div>
+            </header>
             <div className={styles.modules__container}>
                 <section className={styles.main__section}>
                     <section className={styles.head__section}>

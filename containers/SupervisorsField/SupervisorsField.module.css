@@ -1,13 +1,11 @@
 .supervisors__field {
     margin-top: 1.25rem;
     width: 290px;
-    /* height: 393px; */
     display: flex;
     position: relative;
     flex-direction: column;
     background: #FFFFFF;
     border: 1px solid #F2F2F2;
-    /* box-sizing: border-box; */
     border-radius: 10px;
     z-index: 0;
 }

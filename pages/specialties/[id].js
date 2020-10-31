@@ -8,9 +8,9 @@ import SupervisorsField from '../../containers/SupervisorsField/SupervisorsField
 export default function Specialties({moduleData}){
     return (
         <>
-            <div id="header"> 
+            <header> 
                 <MenuBar /> 
-            </div>
+            </header>
             <div className={styles.specialties__container}>
                 <section className={styles.module__section}>
                     <div className={styles.module__head}>

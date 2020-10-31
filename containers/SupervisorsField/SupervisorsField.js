@@ -6,9 +6,9 @@ import WhiteButton from '../../components/UI/Buttons/WhiteButton/WhiteButton'
 export default function SupervisorsField() {
     return (
         <div className={styles.supervisors__field}>
-            <header className={styles.supervisors__header}>
+            <div className={styles.supervisors__header}>
                 <p className={styles.header__p}>Supervayzerlər</p><span><a className={styles.header__a}>Hamısı</a></span>
-            </header>
+            </div>
             <div className={styles.main}>
                 <Supervisor name="Vəliyeva Sara" work="CodeAcademy"/>
                 <Supervisor name="Vəliyeva Sara" work="CodeAcademy"/>
@@ -16,9 +16,9 @@ export default function SupervisorsField() {
                 <Supervisor name="Vəliyeva Sara" work="CodeAcademy"/>
                 <Supervisor name="Vəliyeva Sara" work="CodeAcademy"/>
             </div>
-            <footer className={styles.supervisors__footer}>
+            <div className={styles.supervisors__footer}>
                 <div className={styles.supervisors__button}><WhiteButton border={true} name="Supervizor təklif et" /></div>
-            </footer>
+            </div>
         </div>
 
     );

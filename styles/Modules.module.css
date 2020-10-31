@@ -1,11 +1,10 @@
 .modules__container {
-    display: grid;
-    width: 95vw;
+    display: flex;
+    width: 85%;
     margin: 0 auto;
-    grid-template-columns:  1fr 300px;
-    grid-template-rows: 1fr;
-    /* justify-items: center; */
-    column-gap: 71px;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 71px; 
     padding-top: 100px;
     z-index: 0;
 }
@@ -13,6 +12,7 @@
 /* main section */
 .main__section {
     padding-left: 2rem;
+    width: 70%;
 }
 
 /* head section */
@@ -22,7 +22,6 @@
     max-width: 753px;
     min-width: 550px;
     height: 183px;
-   
     border-bottom: 2px solid #EFEFEF;
     border-radius: 10px;
     box-sizing: border-box;
@@ -159,8 +158,6 @@
 
 .filter__names__inner {
     width: 80%;
-    /* justify-content: space-between; */
-    /* margin-left: 5%; */
 }
 
 .filter__names__inner .filter__name:first-child {
@@ -172,33 +169,26 @@
     margin-right: 3%;
 }
 
-/* .filter__names .filter__name:nth-child(5) {
-    width: 12%;
-} */
-
-
 .detail__section {
-    width: 300px;
-    height: 100%;
-    /* background-color: chartreuse; */
+    width: 30%;
     grid-area: 1/2/-1/3;
     padding: 0 5px;
 }
 
-@media (max-width: 850px){
+@media (max-width: 1050px){
     .modules__container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-        row-gap: 71px;
+        display: flex;
+        flex-direction: column;
     }
 
     .lessons__section {
-        grid-area: 1/1/2/-1;
+        order: 0;
+        width: 100%;
         
     }
 
     .detail__section {
-        grid-area: 2/1/-1/-1;
+        margin-top: 100px;
+        order: 1;
     }
 }
