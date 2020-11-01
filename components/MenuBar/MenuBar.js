@@ -2,7 +2,8 @@ import Link from 'next/link'
 import React from 'react'
 import {useState} from 'react'
 import styles from './MenuBar.module.css'
-import {useDispatch} from 'react-redux'
+import {useDispatch, useSelector} from 'react-redux'
+import {openMenuBar} from '../../redux/menuBarReducer'
 import {openLoginModal, openSignUpModal} from '../../redux/authModalReducer'
 import SignInButton from '../UI/Buttons/SignInButton/SignInButton'
 import WhiteButton from '../UI/Buttons/WhiteButton/WhiteButton'
@@ -14,11 +15,19 @@ import { hamburgerIcon, closeMenuIcon} from '../../constants'
 
 const MenuBar = (props) => {
 
-    const [clicked, setClicked] = useState(false)
+    const clicked = useSelector(state => state.menuBarIsOpen)
     const dispatch = useDispatch()
 
-    const handleClick = () => {
-        setClicked(!clicked)
+    // open login Modal and close responsive MenuBar
+    const handleLoginButtonClick = () => {
+        dispatch(openMenuBar(false))
+        dispatch(openLoginModal(true))
+    }
+
+    // open SignIn Modal and close responsive MenuBar
+    const handleSignInButtonClick = () => {
+        dispatch(openMenuBar(false))
+        dispatch(openSignUpModal(true))
     }
 
     return (
@@ -26,7 +35,7 @@ const MenuBar = (props) => {
         <div className={styles.menuBar}>
         
             <Link className={styles.logo} href="/"><img className={styles.logo} src="/logo.png" alt="logo"/></Link>
-            <div className={styles.icons__for__mobile} onClick={handleClick}>
+            <div className={styles.icons__for__mobile} onClick={() => dispatch(openMenuBar(!clicked))}>
                 {clicked ? closeMenuIcon : hamburgerIcon}
             </div>
             
@@ -38,8 +47,8 @@ const MenuBar = (props) => {
                     <li className={styles.nav__link}><Link href='/wishes'>istəklər</Link></li>
 
                     <div className={styles.buttons__container}>
-                        <a className={styles.button}><WhiteButton name="DAXIL OL" handleClick={() => dispatch(openLoginModal(true))}/></a>
-                        <a className={styles.button}><SignInButton name="QEYDIYYAT" handleClick={() => dispatch(openSignUpModal(true))}/></a>
+                        <a className={styles.button}><WhiteButton name="DAXIL OL" handleClick={handleLoginButtonClick}/></a>
+                        <a className={styles.button}><SignInButton name="QEYDIYYAT" handleClick={handleSignInButtonClick}/></a>
                     </div>
                 </ul>
             </nav>
