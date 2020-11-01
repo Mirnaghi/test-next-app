@@ -1,6 +1,6 @@
 import Modal from 'react-modal'
 import {useDispatch, useSelector} from 'react-redux'
-import {openSignUpModal} from '../../redux/authModalReducer'
+import {openSignUpModal, openLoginModal} from '../../redux/authModalReducer'
 import styles from './SignUpField.module.css'
 import SignInButton from '../../components/UI/Buttons/SignInButton/SignInButton'
 
@@ -33,7 +33,7 @@ function SignUpField(){
                     <input className={styles.short__input} name="phoneNumber" placeholder="(___) ___ __ __"></input>
                     <div className={styles.signUp__button}><SignInButton name="Qeydiyyatdan keç" /></div>
                 </form>
-                <p className={styles.login__link__p}>Mövcud hesabınıza  <a>daxil olun</a></p>
+                <p className={styles.login__link__p}>Mövcud hesabınıza  <a onClick={() => dispatch(openLoginModal(true))}>daxil olun</a></p>
             </div>
         </Modal>
     )

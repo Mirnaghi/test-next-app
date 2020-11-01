@@ -42,3 +42,8 @@
 .long__input {
     width: 100%;
 }
+
+.signIn__link__p {
+    font-size: var(--fs-sm-p);
+    line-height: var(--lh-sm-p);
+}

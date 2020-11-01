@@ -1,6 +1,6 @@
 import Modal from 'react-modal'
 import {useDispatch, useSelector} from 'react-redux'
-import {openLoginModal} from '../../redux/authModalReducer'
+import {openLoginModal, openSignUpModal} from '../../redux/authModalReducer'
 import styles from './LoginField.module.css'
 import SignInButton from '../../components/UI/Buttons/SignInButton/SignInButton'
 
@@ -24,6 +24,7 @@ function LoginField(){
                     </div>
                 </form>
                 <div className={styles.login__button}><SignInButton name="Daxil ol" /></div>
+                <p className={styles.signIn__link__p}>Hesab yoxdursa <a onClick={() => dispatch(openSignUpModal(true))}>qeydiyyatdan keç</a></p>
             </div>
         </Modal>
     )
