@@ -1,12 +1,11 @@
 .modal__style {
     background: none;
     border: none;
-    width: 100vw;
-    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
     outline: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .signUp__body {
@@ -74,6 +73,7 @@
 
 @media (max-width: 475px) {
     .signUp__body {
-        width: 90%;
+        width: auto;
+        min-width: 300px;
     }
 }
