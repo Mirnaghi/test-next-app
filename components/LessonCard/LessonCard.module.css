@@ -1,36 +1,16 @@
-.lesson__card {
-    display: flex;
-    height: 55px;
-    width: 100%;
-    max-width: 773px;
-    border-bottom: 1px solid #E5E5E5;
-}
-
-.head__section, 
-.main__section {
-    display: flex;    
-    align-items: center;
-}
-
-.head__section {
-    justify-content: flex-start;
-    width: 20%;
-    padding-left: 10px;
+.lesson {
+    padding: 0.5em;
 }
 
 .head__icon {
     margin-right: 5px;
 }
 
-.main__section {
-    width: 70%;
-    justify-content: space-between;
-    margin-left: 5%;
-}
 
 /* typhography  */
 .lesson__name{
     font-weight: bold;
+    padding: 0.5em 0.5em 0.5em 0;
 }
 
 
@@ -74,10 +54,5 @@
 
 .start__button {
     color: var(--blue);
+    text-decoration: underline;
 }
-
-
-/* styling */
-/* .lesson__price {
-    
-} */
