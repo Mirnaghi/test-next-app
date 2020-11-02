@@ -111,13 +111,13 @@ label {
     --lh-h3: 42px;
     --bold: bold;
   
-    --fs-p: 14px;
+    --fs-p: 16px;
     --lh-p: 21px;
   
-    --fs-m-p: 12px;
+    --fs-m-p: 14px;
     --lh-m-p: 14px;
   
-    --fs-sm-p: 10px;
+    --fs-sm-p: 12px;
     --lh-sm-p: 12px;
   }
 }
