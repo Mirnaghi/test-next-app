@@ -11,7 +11,6 @@
 
 /* main section */
 .main__section {
-    padding-left: 2rem;
     width: 70%;
 }
 
@@ -100,7 +99,8 @@
 
 /* offer section */
 .offer__section {
-    width: 50%;
+    width: auto;
+    max-width: 400px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -111,84 +111,61 @@
 }
 
 
-
+/* filter section */
 .filter__section {
     height: auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 1rem;
-    width: 100%;
+    margin:0 auto 1rem auto;
+    width: 90%;
     z-index: -1;
 }
 
-.lessons__section {
-    margin-top: 0;
+/* lesson section */
+.lessons {
     width: 100%;
-    /* height: auto; */
+    height: auto;
     max-width: 773px;
-    background-color: var(--white);
+    margin: 0 auto;
+    text-align: center;
+    background: #FFFFFF;
     box-shadow: 4px 4px 10px rgba(85, 85, 85, 0.02);
     border-radius: 10px;
-    /* grid-area: 1/1/2/2; */
-}
-
-.filter__names ,
-.filter__names__inner{
-    display: flex;  
-    align-items: center;
-}
-
-.filter__names {
-    width: 100%;
-    /* max-width: 773px; */
-    font-size: var(--fs-sm-p);
-    line-height: var(--lh-sm-p);
-    font-weight: bold;
-    padding-right: 17%;
-}
-
-
-
-.filter__name__head{
-    width: 20%;
-    padding-left: 10px;
-}
-
-.filter__names__inner {
-    width: 80%;
-}
-
-.filter__names__inner .filter__name:first-child {
-    margin-left: 10%;
-}
-
-.filter__name {
-    width: auto;
-    margin-right: 3%;
 }
 
 .detail__section {
-    width: 30%;
-    grid-area: 1/2/-1/3;
-    padding: 0 5px;
+    width: 25%;
 }
+
+
 
 @media (max-width: 1050px){
     .modules__container {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main__section {
+        width: 100%;
+        margin: 0;
     }
 
     .lessons__section {
         order: 0;
-        width: 100%;
-        
+        width: 100%; 
     }
 
     .detail__section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
         margin-top: 100px;
         order: 1;
     }
 }
+
