@@ -25,9 +25,11 @@
 
 .detail__section {
     width: 30%;
-    height: 100%;
+    /* height: 100%; */
     
 }
+
+
 
 @media (max-width: 1050px){
     .specialties__container {
@@ -38,15 +40,17 @@
     }
     
     .module__section {
-        width: 100%;
+        width: auto;
         order: 1;
     }
     
     .detail__section {
         order: 0;
+        width: auto;
     }
 
     .module__head {
         margin: 3rem auto;
+        width: 80%;
     }
 }
