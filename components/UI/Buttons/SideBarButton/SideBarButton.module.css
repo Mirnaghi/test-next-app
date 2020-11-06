@@ -1,0 +1,15 @@
+.SideBarButton {
+    outline: none;
+    border: none;
+    padding: 1.1em 1.3em;
+    border-radius: 20px;
+    width: 100%;
+    color: #1B76FF;
+    background-color: white;
+    cursor: pointer;    
+
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 500;
+
+}
