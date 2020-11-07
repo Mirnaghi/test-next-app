@@ -4,3 +4,13 @@
     background-color: aqua;
     margin: 10em auto;
 }
+
+.main__section {
+    width: 70%;
+}
+
+.sidebar__section {
+    width: 30%;
+    z-index: 0;
+    position: fixed;
+}

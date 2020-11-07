@@ -1,19 +1,20 @@
 import styles from '../../styles/Account.module.css'
 import MenuBar from '../../components/MenuBar/MenuBar'
 import PersonalInfoTab from '../../components/PersonalInfoBar/PersonalInfoBar'
+import SideBar from '../../containers/SideBar/SideBar'
 
 export default function account({userData}) {
     return (
         <>
-            <div id="header"> 
+            <header> 
                 <MenuBar /> 
-            </div>
+            </header>
             <div className={styles.account__container}>
                 <section className={styles.main__section}>
                     <PersonalInfoTab user={userData} />
                 </section>
                 <section className={styles.sidebar__section}>
-                    
+                    <SideBar />
                 </section>
             </div>
         </>
