@@ -47,7 +47,7 @@ const MenuBar = (props) => {
                     <li className={styles.nav__link}><Link href='/wishes'>istəklər</Link></li>
 
                     <div className={styles.buttons__container}>
-                        <a className={styles.button}><WhiteButton name="DAXIL OL" handleClick={handleLoginButtonClick}/></a>
+                        <a className={styles.button}><WhiteButton name="DAXIL OL" handleClick={handleLoginButtonClick} /></a>
                         <a className={styles.button}><SignInButton name="QEYDIYYAT" handleClick={handleSignInButtonClick}/></a>
                     </div>
                 </ul>

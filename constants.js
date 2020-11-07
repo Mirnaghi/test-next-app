@@ -12,7 +12,6 @@ export const buttonFontStyle = {
     "letter-spacing": "0.05em"
 };
 
-
 // fontawesome icons 
 
 // icons for MenuBar component
