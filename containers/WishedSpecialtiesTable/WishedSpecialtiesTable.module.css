@@ -1,0 +1,12 @@
+.wished__table {
+  width: 100%;
+  max-width: 850px;
+  background: var(--white);
+  box-shadow: 4px 4px 10px rgba(85, 85, 85, 0.02);
+  border-radius: 10px;
+}
+
+.wished__table__head {
+  padding: 1em;
+  text-align: center;
+}
