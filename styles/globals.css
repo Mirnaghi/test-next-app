@@ -11,8 +11,10 @@ body {
   --red: #E7574F;
   --yellow: #FFCD1B;
   --green: #2EBB4D;
-  --page-bg-color: #f2f2f2; 
+  --border-color: #EFEFEF;
+  --page-bg-color: #f2f2f2;
   --secondary-bg-color: #FEFEFE;
+  --third-bg-color: #E5E5E5;
   --input-ph-color: rgba(34, 36, 40, 0.5);
   --input-border-color: #EAEAEA;
   --user-info-input-color: #222428;
@@ -112,13 +114,13 @@ label {
     --fs-h3: 36px;
     --lh-h3: 42px;
     --bold: bold;
-  
+
     --fs-p: 16px;
     --lh-p: 21px;
-  
+
     --fs-m-p: 14px;
     --lh-m-p: 14px;
-  
+
     --fs-sm-p: 12px;
     --lh-sm-p: 12px;
   }
