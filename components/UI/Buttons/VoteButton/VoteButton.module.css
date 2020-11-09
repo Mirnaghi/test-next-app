@@ -1,0 +1,21 @@
+.vote {
+  outline: none;
+  border: none;
+  font-weight: bold;
+  padding: 0.5em 1.25em;
+  border-radius: 20px;
+  background-color: var(--green);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.unvote {
+  outline: none;
+  border: 1px solid var(--green);
+  font-weight: bold;
+  padding: 0.5em 1.25em;
+  border-radius: 20px;
+  background-color: var(--white);
+  color: var(--green);
+  cursor: pointer;
+}
