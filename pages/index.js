@@ -12,7 +12,7 @@ import SearchResult from '../containers/SearchResult/SearchResult'
 
 
 export default function Home() {
-  
+
   const searchResult = useSelector(state => state.foundPathes)
   const dispatch = useDispatch()
 
@@ -54,6 +54,7 @@ export default function Home() {
         <div className={styles.home__container}>
           {!searching ? <TopBar /> : <></>}
           <SearchBar
+            placeholder="Xəyalndakı ixtisası daxil et (Məs: Dizayner, Developer və s)"
             handleChange={handleInputFieldChange}
             handleSubmit={handleSubmit} />
           {searching ? loading ? <h1>loading...</h1> : <SearchResult searchResult={searchResult}/> : <></>}
@@ -63,5 +64,3 @@ export default function Home() {
   );
 
 }
-
-

@@ -1,10 +1,10 @@
 import React from "react";
 import styles from './SearchBar.module.css';
 
-const SearchBar = ({ handleChange, handleSubmit, value }) => {
+const SearchBar = ({ placeholder, handleChange, handleSubmit, value }) => {
     return (
         <div className = {styles.search__bar}>
-            <input onChange={handleChange} value={value} name="search_input" className = {styles.search__bar__input} placeholder = "Xəyalndakı ixtisası daxil et (Məs: Dizayner, Developer və s)"/>
+            <input onChange={handleChange} value={value} name="search_input" className = {styles.search__bar__input} placeholder = {placeholder}/>
             <button onClick={handleSubmit} className = {styles.search__bar__button}>
                 AXTAR
             </button>
@@ -16,5 +16,3 @@ const SearchBar = ({ handleChange, handleSubmit, value }) => {
 
 
 export default SearchBar;
-
-
