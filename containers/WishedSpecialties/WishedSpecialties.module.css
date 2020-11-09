@@ -1,0 +1,12 @@
+.head__info {
+  border-bottom: 2px solid var(--border-color);
+  padding: 0 1em 0.5em 1em;
+}
+
+.head__info_p {
+  width: 70%
+}
+
+.search__for__vote {
+  margin-left: auto;
+}
