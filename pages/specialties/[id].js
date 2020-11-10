@@ -8,8 +8,8 @@ import SupervisorsField from '../../containers/SupervisorsField/SupervisorsField
 export default function Specialties({moduleData}){
     return (
         <>
-            <header> 
-                <MenuBar /> 
+            <header>
+                <MenuBar />
             </header>
             <div className={styles.specialties__container}>
                 <section className={styles.module__section}>
@@ -17,7 +17,7 @@ export default function Specialties({moduleData}){
                         <h3>Lorem ipsum dolor</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.Sit, hic perferendis cupiditate nobis assumenda,tenetur illum quasi reprehenderit neque atque magni quod.Numquam explicbo exercitationem earum reprehenderit.Dignissimos, nemo dolor?</p>
                     </div>
-                    
+
                 <ModuleCard module={moduleData}></ModuleCard>
                 <ModuleCard module={moduleData}></ModuleCard>
                 <ModuleCard module={moduleData}></ModuleCard>
@@ -27,7 +27,7 @@ export default function Specialties({moduleData}){
                     <RequirementsCard/>
                     <SupervisorsField></SupervisorsField>
                 </section>
-            </div>  
+            </div>
         </>
     )
 }
@@ -46,12 +46,12 @@ export async function getStaticProps({params}){
         "enrollment": 255,
         "title": "CSS",
         "lessons": 12,
-        "info": "Lorem ipsum, tenetur illum quasi reprehenderit neque atque magni quod.Numquam reprehenderit.Dignissimos, nemo dolor?" 
+        "info": "Lorem ipsum, tenetur illum quasi reprehenderit neque atque magni quod.Numquam reprehenderit.Dignissimos, nemo dolor?"
     };
-    
+
     return {
         props: {
             moduleData
         }
-    } 
+    }
 }
