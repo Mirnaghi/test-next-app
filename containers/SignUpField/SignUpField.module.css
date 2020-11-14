@@ -34,7 +34,7 @@
     border: 1px solid var(--input-border-color);
     box-sizing: border-box;
     border-radius: 20px;
-    margin-bottom: 1.5em;
+    /* margin-bottom: 1.5em; */
 }
 
 .short__input {
@@ -50,7 +50,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1.5em;
+    margin-top: 1.0em;
 }
 
 .password {
@@ -69,6 +69,13 @@
 .login__link__p {
     font-size: var(--fs-sm-p);
     line-height: var(--lh-sm-p);
+}
+
+.error {
+    margin-top: 0;
+    padding-left: 10px;
+    color: red;
+    font-size: .5em;
 }
 
 @media (max-width: 475px) {
