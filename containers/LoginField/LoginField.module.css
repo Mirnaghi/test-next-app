@@ -46,4 +46,10 @@
 .signIn__link__p {
     font-size: var(--fs-sm-p);
     line-height: var(--lh-sm-p);
+    text-align: center;
+}
+
+.login__button {
+    margin-top: 1em;
+    text-align: center;
 }
