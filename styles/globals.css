@@ -99,6 +99,7 @@ input {
 }
 
 label {
+  margin-top: 1.5em;
   padding-left: 10px;
   font-size: 12px;
   line-height: var(--lh-sm-p);

@@ -169,3 +169,11 @@
     }
 }
 
+@media (max-width: 550px) {
+    .modules__container {
+        width: 100%;
+        min-width: 550px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
