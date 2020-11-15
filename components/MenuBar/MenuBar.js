@@ -9,6 +9,7 @@ import SignInButton from '../UI/Buttons/SignInButton/SignInButton'
 import WhiteButton from '../UI/Buttons/WhiteButton/WhiteButton'
 import SignUpField from '../../containers/SignUpField/SignUpField'
 import LoginField from '../../containers/LoginField/LoginField'
+import AccountButton from '../UI/Buttons/AccountButton/AccountButton'
 
 import { hamburgerIcon, closeMenuIcon} from '../../constants'
 
@@ -17,6 +18,8 @@ const MenuBar = (props) => {
 
     const clicked = useSelector(state => state.menuBarIsOpen)
     const dispatch = useDispatch()
+
+    const user = useSelector(state => state.userAuth)
 
     // open login Modal and close responsive MenuBar
     const handleLoginButtonClick = () => {
@@ -46,10 +49,27 @@ const MenuBar = (props) => {
                     <li className={styles.nav__link}><Link href='/specialties'>İxtisaslar</Link></li>
                     <li className={styles.nav__link}><Link href='/wishes'>istəklər</Link></li>
 
-                    <div className={styles.buttons__container}>
-                        <a className={styles.button}><WhiteButton name="DAXIL OL" handleClick={handleLoginButtonClick} /></a>
-                        <a className={styles.button}><SignInButton name="QEYDIYYAT" handleClick={handleSignInButtonClick}/></a>
-                    </div>
+                    {user.status === 0 ?
+                        <div className={styles.buttons__container}>
+                            <a className={styles.button}>
+                                <AccountButton 
+                                    userName={user.user.fullName} 
+                                    userImg="/user_photo.jpg"/>
+                            </a>
+                        </div> 
+                    :
+                        <div className={styles.buttons__container}>
+                            <a className={styles.button}>
+                                <WhiteButton 
+                                    name="DAXIL OL" 
+                                    handleClick={handleLoginButtonClick} />
+                            </a>
+                            <a className={styles.button}>
+                                <SignInButton 
+                                    name="QEYDIYYAT" 
+                                    handleClick={handleSignInButtonClick}/>
+                            </a>
+                        </div> }
                 </ul>
             </nav>
             

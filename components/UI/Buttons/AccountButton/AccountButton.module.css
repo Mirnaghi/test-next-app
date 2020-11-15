@@ -1,0 +1,24 @@
+.accountButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    /* width: 184px; */
+    background-color: var(--white);
+    border-radius: 25px;
+}
+
+.userName {
+    width: auto;
+    margin: 0 0.9em 0 1.5em;
+    font-size: var(--fs-sm-p);
+    line-height: var(--lh-sm-p);
+    color: var(--blue);
+}
+
+.userImg {
+    width: 30px;
+    height: 30px;
+    margin-right: 0;
+    border-radius: 50%;
+}
