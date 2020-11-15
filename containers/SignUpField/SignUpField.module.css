@@ -2,7 +2,7 @@
     background: none;
     border: none;
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%) !important;
     outline: none;
@@ -50,7 +50,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 1.0em;
+    margin-top: 0.8em;
 }
 
 .password {
@@ -62,20 +62,13 @@
 }
 
 .signUp__button {
-    margin-top: 70px;
+    margin-top: 60px;
     justify-self: center;
 }
 
 .login__link__p {
     font-size: var(--fs-sm-p);
     line-height: var(--lh-sm-p);
-}
-
-.error {
-    margin-top: 0;
-    padding-left: 10px;
-    color: red;
-    font-size: .5em;
 }
 
 @media (max-width: 475px) {
