@@ -1,0 +1,8 @@
+.error {
+    margin: 0;
+    margin-top: 2px;
+    padding-left: 10px;
+    color: red;
+    font-size: var(--fs-sm-p);
+    width: auto;
+}
