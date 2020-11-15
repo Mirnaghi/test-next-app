@@ -5,6 +5,7 @@ import {openLoginModal, openSignUpModal} from '../../redux/authModalReducer'
 import {logInUser} from '../../redux/userAuthReducer'
 import styles from './LoginField.module.css'
 import SignInButton from '../../components/UI/Buttons/SignInButton/SignInButton'
+import ValidationError from '../../components/ErrorHandling/ValidationError/ValidationError'
 
 function LoginField(){
 
@@ -18,6 +19,7 @@ function LoginField(){
             "userid": formData.email,
             "password": formData.password
         }))
+        dispatch(openLoginModal(false))
     }
 
     return (
@@ -40,7 +42,7 @@ function LoginField(){
                             name="email" 
                             placeholder="AdSoyad@example.com" 
                             ref={register({required: true})} />
-                        {errors.email ? <p className="error">Email is required</p> : null}
+                        {errors.email ? <ValidationError  errorMessage="Email teleb olunur" /> : null}
                     </div> 
                     <div className={styles.input__wrapper}>
                         <label for="password">Parol</label>
@@ -51,18 +53,15 @@ function LoginField(){
                             name="password" 
                             placeholder="password" 
                             ref={register({required: true})} />
-                        {errors.password ? <p className="error">Password is required</p> : null}
+                        {errors.password ? <ValidationError  errorMessage="Parol teleb olunur" /> : null}
                     </div>
                     <div className={styles.login__button}><SignInButton name="Daxil ol" /></div>
                 
                     <p className={styles.signIn__link__p}>
-                        Hesab yoxdursa 
-                        <a onClick={() => dispatch(openSignUpModal(true))}>qeydiyyatdan keç</a>
+                        Hesab yoxdursa <a onClick={() => dispatch(openSignUpModal(true))}>qeydiyyatdan keç</a>
                     </p>
                 
-                </form>
-                
-                
+                </form>  
             </div>
         </Modal>
     )
