@@ -2,8 +2,8 @@ import {logInUserService, signInUserService} from '../services/userAuthenticatio
 
 export function signInUser(userData) {
     return async (dispatch) => {
-        const response = await signInUserService(userData).catch(e => {return {user: {}, status: 1}})
-        console.log(response)
+        const response = await signInUserService(userData).catch(e => {console.log(e)})
+        console.log("Inside action", response)
         dispatch({
             type: "SIGN_IN",
             payload: response
@@ -32,14 +32,14 @@ export default function userAuthReducer(
             case "SIGN_IN":
                 return {
                     ...userAuth,
-                    status: 0,
-                    user: action.payload.user
+                    status: action.payload.status,
+                    user: action.payload.data.user
                 }
-            case "LOG_IN":
+            case "LOGIN":
                 return {
                     ...userAuth,
-                    status: 0,
-                    user: action.payload.user
+                    status: action.payload.status,
+                    user: action.payload.data.user
                 }
             default:
                 return userAuth     
