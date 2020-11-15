@@ -1,5 +1,12 @@
 import React from 'react';
-import { faCheckCircle, faTimesCircle, faUser, faBars, faTimes, faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { 
+    faCheckCircle, 
+    faTimesCircle, 
+    faUser, 
+    faBars, 
+    faTimes, 
+    faChevronDown,
+    faExclamationTriangle } from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import './fontawesome';
 
@@ -51,4 +58,8 @@ export const yellowIcon = <FontAwesomeIcon
 // dropdown icon                                    
 export const dropdownIcon = <FontAwesomeIcon 
                                     icon={faChevronDown}
-                                    style={{color: '#000000', width: 17, height: 15}}/>                                     
+                                    style={{color: '#000000', width: 17, height: 15}}/>    
+                                    
+export const errorIcon = <FontAwesomeIcon 
+                            icon={faExclamationTriangle}
+                            style={{color: '#E7574F', width: 12, height: 12}}/>                                    
