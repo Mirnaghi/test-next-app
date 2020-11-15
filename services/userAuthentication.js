@@ -15,19 +15,20 @@ return: response data from server
 */ 
 export const signInUserService = async (data) => {
     console.log("Inside service", data)
-    const response = await axios.post('http://138.68.91.222/api/auth/register', {
-        nickname: data.nickname,
-        fullName: data.fullName,
-        email: data.email,
-        phone: data.phone,
-        password: data.password,
-        role: 0
+    const response = await axios.post('http://138.68.91.222/api/auth/register', data, {
+        headers: {
+            "Content-Type": "application/json"
+        }
     })
         .then(response => {
             console.log("First then", response)
-            return response
+            if(response.data.status === 0) {
+                return response.data
+            } else {
+                return response
+            }
         })
-        .catch(e => {return {user: {}, status: 1}})
+        .catch(e => {return {data: {user: {}, status: 1}}})
         console.log("Response data: ", response)
         return response;
 }
@@ -40,7 +41,10 @@ return: response data from server
 */ 
 export const logInUserService = async (data) => {
     const response = await axios.post('http://138.68.91.222/api/auth/login', data, config)
-    .then(response => response)
+    .then(response => response.data)
+    .catch(e => {
+        return {data: {user: {}, status: 2}}
+    })
 
-    return response.data
+    return response
 }
