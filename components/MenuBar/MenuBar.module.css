@@ -50,7 +50,8 @@
     cursor: pointer;
 }
 
-.buttons__container {
+.buttons__container 
+.accountButtons__container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,4 +122,17 @@
     .search__icon {
         display: none;
     }
+}
+
+/* logout section */
+.hidden__button {
+    display: none;
+}
+
+.button:hover + .hidden__button {
+    display: inline;
+} 
+
+.hidden__button:hover {
+    display: inline;
 }

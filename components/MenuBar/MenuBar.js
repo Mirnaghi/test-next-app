@@ -5,6 +5,7 @@ import styles from './MenuBar.module.css'
 import {useDispatch, useSelector} from 'react-redux'
 import {openMenuBar} from '../../redux/menuBarReducer'
 import {openLoginModal, openSignUpModal} from '../../redux/authModalReducer'
+import {logoutUser} from '../../redux/userAuthReducer'
 import SignInButton from '../UI/Buttons/SignInButton/SignInButton'
 import WhiteButton from '../UI/Buttons/WhiteButton/WhiteButton'
 import SignUpField from '../../containers/SignUpField/SignUpField'
@@ -50,13 +51,18 @@ const MenuBar = (props) => {
                     <li className={styles.nav__link}><Link href='/wishes'>istəklər</Link></li>
 
                     {user.status === 0 ?
-                        <div className={styles.buttons__container}>
+                        <a className={styles.accountButtons__container}>
                             <a className={styles.button}>
                                 <AccountButton 
                                     userName={user.user.fullName} 
                                     userImg="/user_photo.jpg"/>
                             </a>
-                        </div> 
+                            <a className={styles.hidden__button}>
+                                <WhiteButton
+                                    name="Log out"
+                                    handleClick={() => dispatch(logoutUser())}/>
+                            </a>
+                        </a> 
                     :
                         <div className={styles.buttons__container}>
                             <a className={styles.button}>
