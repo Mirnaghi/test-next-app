@@ -22,6 +22,16 @@ export function logInUser(userData) {
     }
 }
 
+export function logoutUser() {
+    return {
+        type: "LOGOUT",
+        payload: {
+            status: 1,
+            user: {}
+        }
+    }
+}
+
 
 export default function userAuthReducer(
     userAuth = {
@@ -41,6 +51,12 @@ export default function userAuthReducer(
                     status: action.payload.status,
                     user: action.payload.data.user
                 }
+            case "LOGOUT":
+                return {
+                    ...userAuth,
+                    status: action.payload.status,
+                    user: action.payload.user
+                }    
             default:
                 return userAuth     
         }
