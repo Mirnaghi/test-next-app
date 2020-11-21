@@ -4,7 +4,7 @@ import {buttonFontStyle} from '../../../../constants';
 
 const WhiteButton = ({name, border, handleClick}) => {
  
-  return <button styles={buttonFontStyle} className={border ? styles.WhiteButton__withBorder: styles.WhiteButton} onClick={handleClick}>{name}</button>;
+  return <button styles={buttonFontStyle} className={name === "LOG OUT" ? styles.logout : border ? styles.WhiteButton__withBorder: styles.WhiteButton} onClick={handleClick}>{name}</button>;
   
 };
 

@@ -51,18 +51,18 @@ const MenuBar = (props) => {
                     <li className={styles.nav__link}><Link href='/wishes'>istəklər</Link></li>
 
                     {user.status === 0 ?
-                        <a className={styles.accountButtons__container}>
-                            <a className={styles.button}>
+                        <div className={styles.accountButtons__container}>
+                            <Link href="/account"><a className={styles.button}>
                                 <AccountButton 
                                     userName={user.user.fullName} 
                                     userImg="/user_photo.jpg"/>
-                            </a>
+                            </a></Link>
                             <a className={styles.hidden__button}>
                                 <WhiteButton
-                                    name="Log out"
+                                    name="LOG OUT"
                                     handleClick={() => dispatch(logoutUser())}/>
                             </a>
-                        </a> 
+                        </div> 
                     :
                         <div className={styles.buttons__container}>
                             <a className={styles.button}>

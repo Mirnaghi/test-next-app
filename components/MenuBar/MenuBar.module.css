@@ -50,16 +50,38 @@
     cursor: pointer;
 }
 
-.buttons__container 
+.buttons__container,
 .accountButtons__container{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.button {
+.button{
     padding: 9px;
     display: inline-block;
+    transition: all 2.0s ease;
+}
+
+/* logout section */
+.hidden__button {
+    width: 70%;
+    display: none;
+    transition: all 2.0s ease;
+}
+@keyframes hover_animation {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.button:hover + .hidden__button {
+    display: block;
+    transition: all 2.0s ease;
+} 
+
+.hidden__button:hover {
+    display: block;
+    /* transition: all 2.0s ease; */
 }
 
 /* mobile view */
@@ -107,10 +129,12 @@
         display: table;
     }
 
-    .buttons__container {
+    .buttons__container,
+    .accountButtons__container {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
 
     .icons__for__mobile {
@@ -122,17 +146,11 @@
     .search__icon {
         display: none;
     }
+
+    /* logout section */
+    .hidden__button {
+        width: 90%;
+    }
 }
 
-/* logout section */
-.hidden__button {
-    display: none;
-}
 
-.button:hover + .hidden__button {
-    display: inline;
-} 
-
-.hidden__button:hover {
-    display: inline;
-}
