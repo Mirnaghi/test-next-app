@@ -6,7 +6,8 @@ import {
     faBars, 
     faTimes, 
     faChevronDown,
-    faExclamationTriangle } from "@fortawesome/free-solid-svg-icons";
+    faExclamationTriangle,
+    faPlus } from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import './fontawesome';
 
@@ -62,4 +63,13 @@ export const dropdownIcon = <FontAwesomeIcon
                                     
 export const errorIcon = <FontAwesomeIcon 
                             icon={faExclamationTriangle}
-                            style={{color: '#E7574F', width: 12, height: 12}}/>                                    
+                            style={{color: '#E7574F', width: 12, height: 12}}/> 
+      
+// used in LanguageSkillField                            
+export const addIcon = <FontAwesomeIcon 
+                            icon={faPlus}
+                            style={{color: '#60A0FF', width: 16, height: 16}}/>  
+
+export const removeIcon =  <FontAwesomeIcon 
+                                icon={faTimes} 
+                                style={{color: '#E7574F', width: 16, height: 16}}/>                                                    

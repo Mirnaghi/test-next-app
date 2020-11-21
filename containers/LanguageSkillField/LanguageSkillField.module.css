@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    width: 100%;
+    min-width: 650px;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.languages {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.language {
+    display: flex;
+    width: 100%;
+    min-width: 300px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.add__language {
+    margin-bottom: 1.5em;
+}
+
+.add__lang__text {
+    align-self: flex-end;
+    color: var(--blue);
+    font-size: var(--fs-m-p);
+    line-height: var(--lh-m-p);
+    margin: 0 0 1em 1em;
+    margin-bottom: 2.25em;
+}
+
