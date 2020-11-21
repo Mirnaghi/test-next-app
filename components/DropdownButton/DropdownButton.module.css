@@ -55,6 +55,7 @@
     font-size: var(--fs-sm-p);
     line-height: var(--lh-m-p);
     color: #222428;
+    width: 130px;
 }
 
 .dropdown__item:last-child {
@@ -87,7 +88,8 @@
 
 @media (max-width: 825px){
     .dropdown,
-    .dropdown__content {
+    .dropdown__content,
+    .dropdown__item {
         width: 120px;
     }
 
@@ -98,7 +100,8 @@
 
 @media (max-width: 700px){
     .dropdown,
-    .dropdown__content {
+    .dropdown__content,
+    .dropdown__item {
         width: 90px;
     }
 
