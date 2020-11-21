@@ -9,4 +9,12 @@ export const getPathes = async () => {
     return response.data;
 }
 
+export const getCourses = async (id) => {
+    const courses = await axios.get(`${baseURL}/api/pathes/${id}/courses`)
+    .then(response => response)
+    .then(res => res.data)
+    
+    console.log(courses)
+    return courses
 
+} 
