@@ -75,6 +75,10 @@
     border-radius: 20px 20px 0px 0px;
 }
 
+.dropdown__btn .dropdown:hover {
+    border-radius: 20px 20px 0px 0px;
+}
+
 .d__P {
     width: 70%;
     text-align: left;
@@ -107,6 +111,10 @@
 
     .dropdown__btn {
         padding: 10px 0.2rem;
+    }
+
+    .dropdown__item {
+        padding: 0.5rem;
     }
 }
 
