@@ -5,6 +5,8 @@ import ModuleCard from '../../containers/ModuleCard/ModuleCard'
 import RequirementsCard from '../../components/RequirementsCard/RequirementsCard'
 import SupervisorsField from '../../containers/SupervisorsField/SupervisorsField'
 
+import {getPathes, getCourses} from '../../services/pathServices'
+ 
 export default function Specialties({moduleData}){
     return (
         <>
@@ -32,8 +34,21 @@ export default function Specialties({moduleData}){
     )
 }
 
-export async function getStaticPaths(){
-    const paths = [{params: {id: "1"}}];
+export async function getStaticPaths() {
+    const allPathes = await getPathes().catch(err => {
+        console.log(err);
+        return {data: [{
+            id: ""
+        }]}
+    })
+
+    const paths = allPathes.data.map(path => {
+        return {
+            params: {
+                id: path.id
+            }
+        }
+    })
 
     return {
         paths,
@@ -42,16 +57,11 @@ export async function getStaticPaths(){
 }
 
 export async function getStaticProps({params}){
-    const moduleData = {
-        "enrollment": 255,
-        "title": "CSS",
-        "lessons": 12,
-        "info": "Lorem ipsum, tenetur illum quasi reprehenderit neque atque magni quod.Numquam reprehenderit.Dignissimos, nemo dolor?"
-    };
+    const courses = await getCourses(params.id)
 
     return {
         props: {
-            moduleData
+            courses
         }
     }
 }
