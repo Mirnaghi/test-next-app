@@ -1,0 +1,179 @@
+.modules__container {
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 71px; 
+    padding-top: 100px;
+    z-index: 0;
+}
+
+/* main section */
+.main__section {
+    width: 70%;
+}
+
+/* head section */
+.head__section {
+    display: flex;
+    width: 95%;
+    max-width: 753px;
+    min-width: 550px;
+    height: 183px;
+    border-bottom: 2px solid #EFEFEF;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+}
+
+.enrollment {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-right: 1px solid #F5F5F5;
+    text-align: center;
+}
+
+.icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.enrollment__p {
+    width: 100%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #222428;
+    margin-top: 0;
+    margin-bottom: 0.525rem;
+    padding: 10px 10px;
+}
+
+.module__title {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+
+.done__p {
+    margin: 0;
+}
+
+.main {
+    box-sizing: border-box;
+    padding-left: 1.25rem;
+
+}
+
+.main__p {
+    height: 40%;
+    color: #222428;
+    margin-bottom: 0;
+    margin-right: 22%;
+    font-size: 0.8rem;
+    line-height: 1.35rem;
+    font-weight: normal;
+}
+
+.detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.detail__p{
+    text-align: left;
+    color: #ABABAB;
+}
+
+
+/* offer section */
+.offer__section {
+    width: auto;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: var(--fs-m-p);
+    line-height: var(--lh-m-p);
+    margin-bottom: 2rem;
+}
+
+
+/* filter section */
+.filter__section {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin:0 auto 1rem auto;
+    width: 90%;
+    z-index: -1;
+}
+
+/* lesson section */
+.lessons {
+    width: 100%;
+    height: auto;
+    max-width: 773px;
+    margin: 0 auto;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 10px rgba(85, 85, 85, 0.02);
+    border-radius: 10px;
+}
+
+.detail__section {
+    width: 25%;
+}
+
+
+
+@media (max-width: 1050px){
+    .modules__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main__section {
+        width: 100%;
+        margin: 0;
+    }
+
+    .lessons__section {
+        order: 0;
+        width: 100%; 
+    }
+
+    .detail__section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 100px;
+        order: 1;
+    }
+}
+
+@media (max-width: 550px) {
+    .modules__container {
+        width: 100%;
+        min-width: 550px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
