@@ -45,6 +45,10 @@ export const userIconModule = <FontAwesomeIcon
                                     icon={faUser}
                                     style={{color: '#C4C4C4'}}/>
 
+export const createContentIcon = <FontAwesomeIcon 
+                                    icon={faPlus}
+                                    style={{color: '#60A0FF', width: 96, height: 96}}/>
+
 
 // icons for LessonCard  
 export const greenIcon = <FontAwesomeIcon 
@@ -72,4 +76,7 @@ export const addIcon = <FontAwesomeIcon
 
 export const removeIcon =  <FontAwesomeIcon 
                                 icon={faTimes} 
-                                style={{color: '#E7574F', width: 16, height: 16}}/>                                                    
+                                style={{color: '#E7574F', width: 16, height: 16}}/>  
+
+
+                            
