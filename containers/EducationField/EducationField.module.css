@@ -1,0 +1,44 @@
+.container {
+    width: 58%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.education {
+    width: auto;
+}
+
+.input__container {
+    display: flex;
+    flex-direction: column; 
+}
+
+.ins__name {
+    width: 50%;
+    min-width: 350px;
+    display: block;
+}
+
+.edu__detail {
+    display: flex;
+    width: 50%;
+    min-width: 350px;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.spec__name {
+    display: block;
+}
+
+.add__education {
+    margin-bottom: 0.5em;
+}
+
+.add__edu__text {
+    align-self: flex-end;
+    color: var(--blue);
+    font-size: var(--fs-m-p);
+    line-height: var(--lh-m-p);
+}

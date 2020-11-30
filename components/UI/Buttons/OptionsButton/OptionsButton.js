@@ -18,7 +18,7 @@ function OptionsButton({name, values}) {
              <span className={styles.options__icon}>
                 {dropdownIcon}
              </span>
-        </button>
+        </button> 
 
         <div className={styles.option__content}>
             { values.map(value => {
