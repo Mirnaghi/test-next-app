@@ -1,5 +1,5 @@
-import styles from './ModuleCard.module.css'
-import WhiteButton from '../../components/UI/Buttons/WhiteButton/WhiteButton'
+import styles from './ModuleCard.module.css';
+import WhiteButton from '../../components/UI/Buttons/WhiteButton/WhiteButton';
 import { userIconModule } from '../../constants';
 
 export default function ModuleCard({module}) {
