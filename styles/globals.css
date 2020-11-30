@@ -106,6 +106,17 @@ label {
   color: var(--input-ph-color);
 }
 
+/* Modal style */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  background: none;
+  border: none;
+  outline: none;  
+}
+
 @media (max-width: 600px) {
   body {
     /* typography */
