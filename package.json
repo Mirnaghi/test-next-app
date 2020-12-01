@@ -1,6 +1,9 @@
 {
   "name": "pathfinder",
   "version": "0.1.0",
+  "engines": {
+    "node": "14.3.0"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",
