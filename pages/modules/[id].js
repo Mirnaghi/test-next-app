@@ -36,12 +36,12 @@ export default function Modules({moduleData}){
 }
 
 export async function getStaticPaths() {
-    const allPathes = await getPathes().catch(err => {
-        console.log(err);
-        return {data: [{
-            id: ""
-        }]}
-    })
+    // const allPathes = await getPathes().catch(err => {
+    //     console.log(err);
+    //     return {data: [{
+    //         id: ""
+    //     }]}
+    // })
 
     // const paths = allPathes.data.map(path => {
     //     return {
