@@ -1,19 +1,21 @@
-import {useState} from "react"
+import {useState, useEffect} from "react"
 import styles from "../../styles/Specialties.module.css"
 import {useSelector, useDispatch} from "react-redux"
 import MenuBar from "../../components/MenuBar/MenuBar"
 import SearchBar from "../../components/SearchBar/SearchBar"
 import SearchResult from "../../containers/SearchResult/SearchResult"
 import AddPathCard from "../../components/AddPathCard/AddPathCard" 
+import {searchPath} from "../../redux/searchPathReducer"
+import {getPaths} from "../../services/pathServices"
 
-export default function Specialties() {
-
-    const searchResult = useSelector(state => state.foundPathes)
+export default function Specialties({allPaths}) {
   const dispatch = useDispatch()
+  const searchResult = useSelector(state => state.paths.foundPaths)
+  
 
   const [searching, setSearching] = useState(false)
   const [loading, setLoading] = useState(false)
-
+  
   // handle change of input field
   const handleInputFieldChange = (event) => {
     setSearching(true)
@@ -45,9 +47,18 @@ export default function Specialties() {
                     placeholder="Xəyalndakı ixtisası daxil et (Məs: Dizayner, Developer və s)"
                     handleChange={handleInputFieldChange}
                     handleSubmit={handleSubmit} />
-                    <AddPathCard />
-                {searching ? loading ? <h1>loading...</h1> : <SearchResult searchResult={searchResult}/> : <></>}
+                {searching ? loading ? <h1>loading...</h1> : <SearchResult searchResult={searchResult}/> : <SearchResult searchResult={allPaths}/>}
             </div>
         </div>
     );
 }
+
+export async function getServerSideProps() {
+  const allPaths = await getPaths().catch((e) => { return [] })
+
+  return {
+    props: {
+      allPaths: allPaths.data
+    }
+  }
+} 
