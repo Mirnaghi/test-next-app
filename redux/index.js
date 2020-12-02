@@ -6,6 +6,7 @@ import createPathModalReducer from "./createPathModalReducer"
 import menuBarReducer from "./menuBarReducer"
 import accountPageReducer from "./accountPageReducer"
 import userAuthReducer from "./userAuthReducer"
+import createNewPathReducer from "./createNewPathReducer"
 // for debug
 import {searchPath} from './searchPathReducer'
 
@@ -13,7 +14,8 @@ import searchPathReducer from "./searchPathReducer"
 
 
 const rootReducer = combineReducers({
-    foundPathes: searchPathReducer,
+    paths: searchPathReducer,
+    newPaths: createNewPathReducer,
     authModal: authModalReducer,
     createPathModal: createPathModalReducer,
     menuBarIsOpen: menuBarReducer,
