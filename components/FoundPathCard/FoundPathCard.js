@@ -4,7 +4,14 @@ import WhiteButton from '../UI/Buttons/WhiteButton/WhiteButton'
 import { availableIcon, unavailableIcon } from '../../constants';
 
 
-const FoundPathCard = ({path}) => {
+const FoundPathCard = ({pathData}) => {
+
+    const path = {
+        "name": pathData.name,
+        "studentCount": pathData.studentCount,
+        "free_cont": true,
+        "foreign_resources": ["English"]
+    }
     return  (
         <div class={styles.card}>
             <section class={styles.card__head}>
