@@ -115,6 +115,8 @@ label {
   background: none;
   border: none;
   outline: none;  
+  width: auto;
+  height: auto;
 }
 
 @media (max-width: 600px) {
