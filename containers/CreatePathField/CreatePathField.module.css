@@ -4,7 +4,8 @@
     width: 300px;
     height: 350px;
     padding: 1rem;
-    color: var(--blue)
+    color: var(--blue);
+    border-radius: 20px;
 }
 
 .form__field {
