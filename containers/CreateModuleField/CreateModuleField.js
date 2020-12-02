@@ -3,7 +3,7 @@ import Modal from "react-modal";
 import {useSelector, useDispatch} from "react-redux"
 import {openCreateModule} from "../../redux/createPathModalReducer"
 import {useForm} from "react-hook-form"
-import Bluebutton from "../../components/UI/Buttons/BlueButton/BlueButton"
+import BlueButton from "../../components/UI/Buttons/BlueButton/BlueButton"
 
 function CreateModuleField() {
 
