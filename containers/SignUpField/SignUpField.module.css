@@ -61,8 +61,24 @@
     width: 100%;
 }
 
+.userType {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* .userType__p, */
+
+
+
+.radio__btn {
+    height: auto;
+    margin-top: 0;
+    margin-left: 1em;
+}
+
 .signUp__button {
-    margin-top: 60px;
+    margin-top: 2em;
     justify-self: center;
 }
 

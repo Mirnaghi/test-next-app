@@ -28,15 +28,15 @@ function SignUpField() {
             + fullname.substring(fullname.indexOf(" ") + 1, fullname.length)
 
         console.log(formData)
-        dispatch(signInUser({
-            username: userNickname.toLowerCase(),
-            fullname: fullname,
-            email: formData.email,
-            phone: formData.phone,
-            password: formData.password,
-            role: 0
-        }))
-        dispatch(openSignUpModal(false))
+        // dispatch(signInUser({
+        //     username: userNickname.toLowerCase(),
+        //     fullname: fullname,
+        //     email: formData.email,
+        //     phone: formData.phone,
+        //     password: formData.password,
+        //     role: formData.user_type
+        // }))
+        // dispatch(openSignUpModal(false))
     }
 
     return (
@@ -128,6 +128,25 @@ function SignUpField() {
                         name="phone"
                         placeholder="(___) ___ __ __"
                         ref={register({ required: true })} />
+
+                    <div className={styles.userType}>
+                        <p className={styles.userType__p}>Register as:</p>
+                        <input 
+                            id="std"
+                            className={styles.radio__btn}
+                            type="radio"
+                            name="user_type"
+                            value={0}
+                            ref={register}/>
+                        <span>Student</span>
+                        <input 
+                            className={styles.radio__btn}
+                            type="radio"
+                            name="user_type"
+                            value={1}
+                            ref={register}/> 
+                        <span>Supervisor</span>     
+                    </div>    
 
                     <div className={styles.signUp__button}>
                         <SignInButton name="Qeydiyyatdan keç" />
