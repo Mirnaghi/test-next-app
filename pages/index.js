@@ -13,7 +13,7 @@ import SearchResult from '../containers/SearchResult/SearchResult'
 
 export default function Home() {
 
-  const searchResult = useSelector(state => state.foundPathes)
+  const searchResult = useSelector(state => state.paths.foundPaths)
   const dispatch = useDispatch()
 
   const [searching, setSearching] = useState(false)
