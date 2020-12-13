@@ -87,7 +87,7 @@ a:focus {
 input {
   outline: none;
   padding-left: 17px;
-  color: var(--input-ph-color);
+  color: var(--black);
   font-size: var(--fs-sm-p);
   line-height: var(--lh-sm-p);
   height: 35px;
