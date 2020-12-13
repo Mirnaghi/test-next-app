@@ -4,15 +4,23 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useForm } from 'react-hook-form'
 import { openSignUpModal, openLoginModal } from '../../redux/authModalReducer'
 import { signInUser } from '../../redux/userAuthReducer'
+import { showSpinner } from '../../redux/showSpinnerReducer'
 import styles from './SignUpField.module.css'
 import SignInButton from '../../components/UI/Buttons/SignInButton/SignInButton'
 import ValidationError from '../../components/ErrorHandling/ValidationError/ValidationError'
+import Spinner from '../../components/Spinner/Spinner'
 
 import { mailValidator, confirmPassword } from '../../utils/validators/authFormValidators'
 
 function SignUpField() {
-
+    
+    // use state to open or close SignUpField Modal 
     const signUpIsOpen = useSelector(state => state.authModal.signUp)
+    
+    // use showSpinner state to show spinner while user signs up
+    const spinnerIsShowen = useSelector(state => state.showSpinner) 
+    
+    // initialize hooks
     const dispatch = useDispatch()
     const { register, handleSubmit, errors } = useForm()
 
@@ -22,27 +30,39 @@ function SignUpField() {
 
 
     function onSubmit(formData) {
+
+        // show spinner on submit
+        dispatch(showSpinner(true))
+        setTimeout(() => {
+            dispatch(showSpinner(false));
+            dispatch(openSignUpModal(false));
+        }, 2000)
+
+
         const fullname = formData.fullname
         const userNickname = fullname.substring(0, fullname.indexOf(" "))
             + "_"
             + fullname.substring(fullname.indexOf(" ") + 1, fullname.length)
 
         console.log(formData)
-        // dispatch(signInUser({
-        //     username: userNickname.toLowerCase(),
-        //     fullname: fullname,
-        //     email: formData.email,
-        //     phone: formData.phone,
-        //     password: formData.password,
-        //     role: formData.user_type
-        // }))
-        // dispatch(openSignUpModal(false))
+        dispatch(signInUser({
+            username: userNickname.toLowerCase(),
+            fullname: fullname,
+            email: formData.email,
+            phone: formData.phone,
+            password: formData.password,
+            role: 1,
+        }))
+    
     }
 
     return (
         <Modal className={styles.modal__style} isOpen={signUpIsOpen} onRequestClose={() => dispatch(openSignUpModal(false))}>
             <div className={styles.signUp__body}>
                 <h4>Qeydiyyatdan keç</h4>
+
+                {spinnerIsShowen ? <Spinner /> : null}
+                
                 <form
                     className={styles.register__form}
                     onSubmit={handleSubmit(onSubmit)}
