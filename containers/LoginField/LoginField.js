@@ -2,24 +2,37 @@ import Modal from 'react-modal'
 import {useForm} from 'react-hook-form'
 import {useDispatch, useSelector} from 'react-redux'
 import {openLoginModal, openSignUpModal} from '../../redux/authModalReducer'
+import { showSpinner } from '../../redux/showSpinnerReducer'
 import {logInUser} from '../../redux/userAuthReducer'
 import styles from './LoginField.module.css'
 import SignInButton from '../../components/UI/Buttons/SignInButton/SignInButton'
 import ValidationError from '../../components/ErrorHandling/ValidationError/ValidationError'
+import Spinner from '../../components/Spinner/Spinner'
 
 function LoginField(){
 
     const loginIsOpen = useSelector(state => state.authModal.login)
+
+    const spinnerIsShowen = useSelector(state => state.showSpinner) 
+
+
     const dispatch = useDispatch()
     const {register, handleSubmit, errors} = useForm()
 
     function onSubmit(formData) {
+
+        // show spinner on submit
+        dispatch(showSpinner(true))
+        setTimeout(() => {
+            dispatch(showSpinner(false));
+            dispatch(openLoginModal(false));
+        }, 2000)
+
         console.log("Login user data: ", formData)
         dispatch(logInUser({
             "userid": formData.email,
             "password": formData.password
         }))
-        dispatch(openLoginModal(false))
     }
 
     return (
@@ -30,6 +43,9 @@ function LoginField(){
         >
             <div className={styles.login__body}>
                 <h4 className={styles.login__head}>Daxil ol</h4>
+
+                {spinnerIsShowen ? <Spinner /> : null}
+                
                 <form 
                     className={styles.login__form} 
                     onSubmit={handleSubmit(onSubmit)}
