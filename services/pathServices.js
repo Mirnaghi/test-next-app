@@ -11,9 +11,15 @@ export const getPaths = async () => {
 
 export const createPath = async (newPath) => {
     const response = await axios.post(
-        `${baseURL}/api/paths/new`, 
-        newPath
-    ).then( res => {
+        `${baseURL}/api/paths/new`,
+        newPath,
+        {
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer'
+            },
+        }
+    ).then(res => {
         return res
     }).then(result => result)
     console.log(response)
@@ -22,9 +28,9 @@ export const createPath = async (newPath) => {
 
 export const getCourses = async (id) => {
     const courses = await axios.get(`${baseURL}/api/paths/${id}/courses`)
-    .then(response => response)
-    .then(res => res.data)
-    
+        .then(response => response)
+        .then(res => res.data)
+
     console.log(courses)
     return courses
 
