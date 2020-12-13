@@ -1,0 +1,36 @@
+.spinner__container {
+    width: 25px; /* for little*/
+    height: 25px; /* for little*/
+    position: relative; /* position cycles absolute to this div*/
+}
+
+.first__cycle,
+.second__cycle {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border: 5px solid transparent;
+    border-top-color: var(--blue);
+    border-radius: 50%;
+    animation: firstSpinner 1.2s linear infinite;
+}
+
+.second__cycle {
+    border: 10px solid transparent;
+    border-bottom-color: var(--blue);
+    animation: secondSpinner 1.2s linear infinite;
+}
+
+/* animation */
+@keyframes firstSpinner {
+    0% {transform: rotate(0deg); border-width: 5px;}
+    50% {transform: rotate(180deg); border-width: 1px;}
+    100% {transform: rotate(360deg); border-width: 5px;}
+}
+
+@keyframes secondSpinner {
+    0% {transform: rotate(0deg); border-width: 1px;}
+    50% {transform: rotate(180deg); border-width: 5px;}
+    100% {transform: rotate(360deg); border-width: 1px;}
+}
