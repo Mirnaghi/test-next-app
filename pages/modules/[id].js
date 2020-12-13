@@ -6,9 +6,9 @@ import AddModuleCard from "../../components/AddModuleCard/AddModuleCard"
 import RequirementsCard from '../../components/RequirementsCard/RequirementsCard'
 import SupervisorsField from '../../containers/SupervisorsField/SupervisorsField'
 
-import {getPathes, getCourses} from '../../services/pathServices'
+import {getPaths, getCourses} from '../../services/pathServices'
  
-export default function Modules({moduleData}){
+export default function Modules({courses}){
     return (
         <>
             <header >
@@ -21,10 +21,7 @@ export default function Modules({moduleData}){
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.Sit, hic perferendis cupiditate nobis assumenda,tenetur illum quasi reprehenderit neque atque magni quod.Numquam explicbo exercitationem earum reprehenderit.Dignissimos, nemo dolor?</p>
                     </div>
                 <AddModuleCard />
-                <ModuleCard module={moduleData}></ModuleCard>
-                <ModuleCard module={moduleData}></ModuleCard>
-                <ModuleCard module={moduleData}></ModuleCard>
-                <ModuleCard module={moduleData}></ModuleCard>
+                {courses.map(course => <ModuleCard module={course}></ModuleCard>)}
                 </section>
                 <section className={styles.detail__section}>
                     <RequirementsCard/>
@@ -35,49 +32,17 @@ export default function Modules({moduleData}){
     )
 }
 
-export async function getStaticPaths() {
-    // const allPathes = await getPathes().catch(err => {
-    //     console.log(err);
-    //     return {data: [{
-    //         id: ""
-    //     }]}
-    // })
 
-    // const paths = allPathes.data.map(path => {
-    //     return {
-    //         params: {
-    //             id: path.id
-    //         }
-    //     }
-    // })
 
-    const paths = [
-        {
-            params: {
-                id: "1"
-            }
-        }
-    ]
+export async function getServerSideProps(context){
+    const courses = await getCourses(context.query.id);
 
-    return {
-        paths,
-        fallback: false
-    }
-}
-
-export async function getStaticProps({params}){
-    // const courses = await getCourses(params.id)
-
-    const moduleData = {
-        title: "CSS",
-        enrollment: 255,
-        info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.Sit, hic perferendis cupiditate nobis assumenda,tenetur illum quasi reprehenderit neque atque magni quod.Numquam explicbo exercitationem earum reprehenderit.Dignissimos, nemo dolor?",
-        lessons: 12
-    }
+    // for debug
+    console.log("Courses: ", courses);
 
     return {
         props: {
-            moduleData
+            courses
         }
     }
 }

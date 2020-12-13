@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link'
 import styles from './FoundPathCard.module.css';
 import WhiteButton from '../UI/Buttons/WhiteButton/WhiteButton'
 import { availableIcon, unavailableIcon } from '../../constants';
@@ -7,6 +8,7 @@ import { availableIcon, unavailableIcon } from '../../constants';
 const FoundPathCard = ({pathData}) => {
 
     const path = {
+        "id": pathData.id,
         "name": pathData.name,
         "studentCount": pathData.studentCount,
         "free_cont": true,
@@ -41,8 +43,14 @@ const FoundPathCard = ({pathData}) => {
             </section>
 
             <section class={styles.card__footer}>
+            
                 <a className={styles.requirements}>Tələblər</a>
-                <WhiteButton border={true} name="Başla"/>
+                
+                <Link href="/modules/[id]" as={`/modules/${path.id}`}>
+                    <a>
+                    <WhiteButton border={true} name="Başla"/>
+                    </a>
+                </Link> 
             </section>
         </div>
     );
