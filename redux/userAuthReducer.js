@@ -36,6 +36,7 @@ export function logoutUser() {
 export default function userAuthReducer(
     userAuth = {
         status: 1, 
+        token: null,
         user: {}
     }, action) {
         switch(action.type){
@@ -43,18 +44,21 @@ export default function userAuthReducer(
                 return {
                     ...userAuth,
                     status: action.payload.status,
+                    token: action.payload.data.token,
                     user: action.payload.data.user
                 }
             case "LOGIN":
                 return {
                     ...userAuth,
                     status: action.payload.status,
+                    token: action.payload.data.token,
                     user: action.payload.data.user
                 }
             case "LOGOUT":
                 return {
                     ...userAuth,
                     status: action.payload.status,
+                    token: null,  
                     user: action.payload.user
                 }    
             default:

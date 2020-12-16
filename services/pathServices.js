@@ -9,15 +9,16 @@ export const getPaths = async () => {
     return response.data;
 }
 
-export const createPath = async (newPath) => {
+export const createPath = async (data) => {
+    console.log("Path create data in service: ", data.newPath)
     const response = await axios.post(
-        `${baseURL}/api/paths/new`,
-        newPath,
+        `${baseURL}/api/paths/new`, 
+        data.newPath, 
         {
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': 'Bearer'
-            },
+                'Authorization': `Bearer ${data.token}` 
+            }
         }
     ).then(res => {
         return res

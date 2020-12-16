@@ -1,8 +1,8 @@
 import {createPath} from "../services/pathServices"
 
-export function createNewPath(newPath){
+export function createNewPath(data){
     return async (dispatch) => {
-        const response = await createPath(newPath).catch(err => {
+        const response = await createPath(data).catch(err => {
             console.error("Path creation failed:", err.message)
         })
         console.log("Result of createNewPath: ", response)
@@ -25,7 +25,7 @@ export default function createNewPathReducer(state = {newPaths: [], success: nul
         case "CREATE_PATH":
             return {
                 ...state,
-                newPaths: state.newPath.concat(action.payload),
+                newPaths: state.newPaths.concat(action.payload.data),
                 success: true
             }
         case "UNSUCCESSFUL_CREATE_PATH":
